@@ -1,0 +1,84 @@
+
+body{
+    background-color:#336162 ;
+/*    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;*/
+}
+.b_main{
+    width: 400px;
+    height: 330px;
+    /*position: absolute;*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    background-color: #aecdd3;
+}
+.b_main_top{
+    /*background-color: #009900;*/
+    width: 100%;
+    height: 50px;
+
+}
+.b_main_top h2{
+    text-align: center;
+    color: #336162;
+}
+form {
+    padding: 3em 2em;
+    background: #F2F2F2;
+
+}
+form li{
+    border: 2px ridge rgba(187, 185, 189, 0.11);
+    border-radius: 0.3em;
+    list-style:none;
+    margin-bottom:12px;
+    background:#F0EEF0;
+}
+input[type="text"], input[type="password"] {
+    font-family: 'Droid Sans', sans-serif;
+    width:70%;
+    padding: 0.5em 2em 0.5em 1em;
+    color: #B8B8B8;
+    font-size:20px;
+    outline: none;
+    background: none;
+    border:none;
+}
+input[type="text"]:hover, input[type="password"]:hover{
+    color:#336162;
+
+}
+.submit h4 a{
+    float:left;
+    font-size: 16px;
+    color: #999;
+    font-weight: 400;
+    font-family: 'Droid Sans', sans-serif;
+    margin-top: 15px;
+    margin-left: 21px;
+}
+.submit h4 a:hover{
+    color:#336162;
+}
+input[type="submit"] {
+    float: left;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 900;
+    outline: none;
+    font-family: 'Raleway', sans-serif;
+    padding: 8px 2px;
+    width: 35%;
+    font-size: 18px;
+    background:#336162;
+    border:2px solid #39625f;
+    border-radius: 0.5em;
+}
+input[type="submit"]:hover {
+    background: #fff;
+    color:#336162;
+    border:2px solid #39625f;
+}
+
