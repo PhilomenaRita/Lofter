@@ -1,0 +1,457 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 12px;
+    color: #444;
+}
+
+.nav-hd{
+    height: 82px;
+    margin-bottom: 30px;
+}
+
+.nav-hd{
+    background: url(../images/navbody.png) repeat-x;
+}
+
+.nav-hdc{
+    width: 928px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+h1 {
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+}
+
+.nav-logo{
+    /*margin: 19px 0px 0 0;*/
+    margin: 10px 0px 0 0;
+}
+.nav-logo, .nav-logo a{
+    position: relative;
+    float: left;
+    width: 220px;
+    height: 44px;
+}
+.nav-logo a {
+    margin-top: 9px;
+    overflow: hidden;
+    text-indent: -2000px;
+    background-position: 0 0;
+}
+
+.nav-logo a,.nav-nav li {
+    background: url(../images/hd24.png) no-repeat 999px 999px;
+}
+
+.w-sel-4,.nav1 .seli a,.more{
+    background: url(../images/navicon.png) -9999px -9999px no-repeat;
+}
+
+a {
+    text-decoration: none;
+    color: #444;
+    outline: none;
+}
+
+.nav-nav{
+    float: right;
+    margin: 35px 0 0;
+}
+
+.nav1 {
+    margin-left: -20px;
+    margin-top: -22px;
+    position: relative;
+    z-index: 65;
+    /*width: 450px;*/
+    height: 47px;
+    padding: 22px 5px 0 0;
+    /*margin: -22px 0 0;*/
+    text-align: right;
+}
+
+.nav-nav ul{
+    display: inline;
+    float: left;
+}
+
+.nav-nav li{
+    position: relative;
+    zoom: 1;
+    z-index: 65;
+    height: 47px;
+    line-height: 24px;
+}
+
+.nav-nav, .nav1 li{
+    float: none;
+    display: inline-block;
+}
+
+.nav-nav .j-crt{
+    min-width: 18px;
+    text-align: center;
+    background-position: center -102px;
+}
+
+.nav-nav,.nav1{
+    position: relative;
+    z-index: 65;
+    width: 500px;
+    height: 47px;
+    /*    padding: 22px 5px 0 0;
+        margin: -22px 0 0;*/
+    /*    padding: 22px 5px 0 0;
+        margin: -4px 0 0;*/
+    text-align: left;
+}
+
+li{
+    margin-left: 30px;
+}
+
+.nav1 a {
+    white-space: nowrap;
+    font-size: 16px;
+    color: #999;
+}
+
+.nav-nav a:hover{
+    color: #fff;
+}
+
+.more {
+    display: inline-block;
+    width: 15px;
+    height: 21px;
+    background-position: 6px 9px;
+}
+.nav1 a:hover .more {
+    background-position: -16px 9px;
+}
+
+/*下拉*/
+.a-w-sel-4 {
+    width: 226px;
+    margin: -20px 0 0 -120px;
+}
+.a-w-sel-do {
+    padding-bottom: 3px;
+}
+.a-w-sel {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    /*    width: 84px;
+        margin-left: -42px;*/
+    padding: 0 2px;
+
+    overflow: hidden;
+    zoom: 1;
+}
+.a-w-sel .w-sel {
+    position: static;
+    top: 0;
+    left: 0;
+    margin-left: 0;
+    /*margin-top: -200px;*/
+}
+.w-sel-4 {
+    width: 270px;
+    padding-top: 8px;
+    margin: -20px 0 0 -120px;
+    background-position: 105px -16px;
+}
+w-sel-do .w-sel {
+    display: block;
+    opacity: 1;
+}
+.a-w-sel .w-sel{
+    -webkit-transition: 0.3s;
+}
+.w-sel-4 .seli a {
+    display: block;
+    width: 147px;
+    padding: 0px 40px;
+    color: #bcbcbc;
+    line-height: 40px;
+    font-size: 12px;
+    text-align: left;
+}
+.w-sel .selcc {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    zoom: 1;
+    margin-bottom: -2px;
+    background-color: #333;
+}
+.w-sel .seli {
+    position: relative;
+    float: left;
+    z-index: 2;
+    zoom: 1;
+    width: 100%;
+    margin: -1px 0 1px;
+    border-top: 1px solid #202020;
+    border-bottom: 1px solid #0c0c0c;
+    background-color: #191919;
+}
+.nav1 .selcc .nx-2 {
+    background-position: 17px -299px;
+}
+.nav1 .selcc .nx-6 {
+    background-position: 16px -712px;
+}
+.nav1 .selcc .nx-3 {
+    background-position: 18px -339px;
+}
+.nav1 .selcc .nx-10 {
+    background: url(../images/navicon24.png) 18px 14px no-repeat;
+}
+.nav1 .selcc .nx-10:hover {
+    background-color: #444;
+}
+.nav1 .selcc .nx-8 {
+    background-position: 17px -1017px;
+}
+.nav1 .selcc .nx-7 {
+    background-position: 16px -809px;
+}
+.nav1 .selcc .nx-4 {
+    background-position: 16px -381px;
+}
+.nav1 .selcc .nx-5 {
+    background-position: 16px -419px;
+}
+
+.seli a:hover{
+    color: #fff;
+    background-color: #444;
+}
+
+/*搜索框*/
+.w-sel-5, .new, .nav-nav .nav2,.nav2 .name,.nav-nav .nav2 .sugbox,.nav-nav .btn,.nav2 {
+    background: url(../images/navicon.png) -9999px -9999px no-repeat;
+}
+.m-ssch2 {
+    width: 230px;
+    z-index: 64;
+}
+.m-ssch2 .suggest {
+    position: absolute;
+    top: 100%;
+    left: -32px;
+    width: 226px;
+    overflow: hidden;
+}
+.a-w-sel-5 {
+    width: 226px;
+    margin: 0px 0 0 -149px;
+}
+.a-w-sel {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    /*    width: 84px;
+        margin-left: -42px;*/
+    padding: 0 2px;
+}
+.nav2 .btn {
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    width: 18px;
+    height: 18px;
+    background-position: 0 -81px;
+}
+.nav2 form label {
+    position: absolute;
+    top: 5px;
+    left: 32px;
+    color: #666;
+    cursor: text;
+    z-index: 1;
+}
+.nav2 input {
+    position: relative;
+    width: 144px;
+    height: 18px;
+    padding: 4px 45px 2px 0;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    line-height: 18px;
+    color: #fff;
+    z-index: 3;
+}
+.nav2 .sugbox {
+    width: 226px;
+    padding-top: 8px;
+    background-position: 105px -16px;
+}
+.m-ssch2 .sugbox {
+    -webkit-transition: margin-top .3s linear;
+    margin-top: -331px;
+}
+.nav2 form {
+    background-color: #000;
+}
+.nav2 .img img {
+    display: block;
+    width: 34px;
+    height: 34px;
+    border: 0 none;
+}
+.w-sel-5 a {
+    color: #bcbcbc;
+}
+.m-subscribetags .subttl {
+    height: 40px;
+    line-height: 40px;
+    padding-left: 17px;
+    color: #888;
+    font-size: 12px;
+    background-color: #191919;
+}
+.m-hotrecomtags .subttl {
+    height: 40px;
+    line-height: 40px;
+    padding-left: 17px;
+    color: #888;
+    font-size: 12px;
+    background-color: #191919;
+}
+.w-sel-5 {
+    width: 226px;
+    padding-top: 8px;
+    background-position: 105px -16px;
+}
+.w-sel .selcc {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    zoom: 1;
+    margin-bottom: -2px;
+    background-color: #333;
+}
+.nav2 .name {
+    padding-left: 22px;
+    font-size: 14px;
+    line-height: 18px;
+    background-position: 0px -111px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.tags a:hover .name, .m-nav .tags .seli-hover .name {
+    background-position: -238px -111px;
+    color: #fff;
+}
+.w-sel{
+    white-space: nowrap;
+}
+.nav2 .tags a {
+    display: block;
+    position: relative;
+    height: 36px;
+    padding: 7px 50px 9px 17px;
+}
+.nav2 .img {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 34px;
+    height: 34px;
+    overflow: hidden;
+}
+.nav2 .count {
+    padding: 4px 0 0 22px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #888;
+}
+
+.nav-nav .nav2 {
+    float: right;
+    position: relative;
+    top: -50px;
+    left: 210px;
+    width: 184px;
+    height: 26px;
+    margin-left: 26px;
+    padding: 2px 10px 2px 32px;
+    background-position: 0 -41px;
+    z-index: 65;
+}
+.nav2 .new {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 40px;
+    height: 18px;
+    line-height: 18px;
+    color: #303539;
+    text-align: center;
+    background-position: -210px -81px;
+    cursor: pointer;
+}
+.nav-nav .nav1 .selcc .nx-2:hover, .nav-nav .nav1 .selcc .j-hover .nx-2 {
+    background-position: -214px -299px;
+}
+
+.nav1 .selcc .nx-6:hover {
+    background-position: -217px -712px;
+}
+.nav1 .selcc .nx-3:hover {
+    background-position: -213px -339px;
+}
+.selcc .nx-10:hover {
+    background: url(../images/navicon24.png) -220px 14px no-repeat;
+}
+.nav1 .selcc .nx-8:hover {
+    background-position: -214px -1017px;
+}
+.nav1 .selcc .nx-7:hover {
+    background-position: -217px -809px;
+}.nav1 .selcc .nx-4:hover {
+     background-position: -215px -381px;
+ }
+.nav1 .selcc .nx-5:hover {
+    background-position: -215px -419px;
+}
+
+.j-crt {
+    background-position: -113px -221px;
+}
+.j-crt {
+    min-width: 18px;
+    text-align: center;
+    background-position: center -102px;
+}
+
+.j-crt a{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    text-align: center;
+    background-color: #ededef;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #b2b2b2;
+}
+input:-moz-placeholder, textarea:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #b2b2b2;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #b2b2b2;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #b2b2b2;
+}
+.head{
+    width: 100%;
+    height: 82px;
+    background: #24292c;
+}
+.lofter-logo {
+    width: 220px;
+    height: 44px;
+    margin: 0 auto;
+}
+.head a{
+    margin: 19px 0;
+    position: relative;
+    float: left;
+    width: 220px;
+    height: 44px;
+    background: url(../images/hdlogo_2x.png) 0 0 no-repeat;
+    background-size: 180px;
+}
+.register-box {
+    width: 720px;
+    height: 490px;
+    background: #fff;
+    margin: 90px auto 75px;
+}
+.rg-head {
+    line-height: 50px;
+    padding: 19px 20px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+.rg-head h2{
+    display: inline-block;
+    color: #333;
+    font-size: 24px;
+    font-weight: normal;
+}
+.support {
+    margin-left: 20px;
+    font-size: 14px;
+    color: #888888;
+}
+.have {
+    margin-left: 190px;
+    font-size: 14px;
+    color: #888888;
+}
+.rg-head a {
+    font-size: 14px;
+    color: #5a8dcd;
+}
+.rg-main {
+    padding-top: 40px;
+    position: relative;
+}
+.rg-main label{
+    float: left;
+    width: 194px;
+    height: 44px;
+    line-height: 44px;
+    text-align: right;
+    font-size: 20px;
+    color: #444444;
+}
+.rg-main input {
+    float: left;
+    width: 350px;
+    height: 44px;
+    margin-left: 20px;
+    line-height: 44px;
+    font-size: 18px;
+    color: #444444;
+    border: solid 1px #d7d7d8;
+    outline: none;
+    text-indent: 10px;
+}
+.num {
+    position: absolute;
+    top: 50px;
+    left: 224px;
+    font-size: 20px;
+    color: #444444;
+}
+#phone-num {
+    text-indent: 60px;
+}
+.msg {
+    display: block;
+    height: 26px;
+    font-size: 14px;
+    color: red;
+    padding-top: 4px;
+    text-align: left;
+    margin-left: 232px;
+}
+#auth-code {
+    width: 200px;
+}
+.get-code {
+    float: left;
+    width: 130px;
+    height: 44px;
+    margin: 3px 0 0 10px;
+    line-height: 44px;
+    text-align: center;
+    font-size: 17px;
+    border-radius: 20px;
+    background: #eaeaea;
+    color: #888888;
+    cursor: pointer;
+}
+.line:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+}
+#nex {
+    margin-left: 214px;
+    background-color: #b2b2b2;
+    color: #fff;
+    cursor: default;
+}
+input:focus{
+    border: 1px solid rgb(142,187,0);
+}
+
+footer {
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+.ft1 a,span {
+    color: #74808b;
+    font-size: 12px;
+}
+.police {
+    position: relative;
+}
+.police img {
+    width: 14px;
+    height: 16px;
+    position: absolute;
+    left: 0;
+    top: 4px;
+}
+.ft2 {
+    margin-top: 10px;
+}
+.police span {
+    margin-left: 18px;
+}
+.ft2 span{
+    margin-left: 20px;
+}

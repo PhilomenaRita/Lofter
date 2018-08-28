@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.clear{
+    clear:both;
+    height:0;
+    overflow:hidden;
+}
+.wrapper{
+    width: 100%;
+}
+.header{
+    height: 82px;
+    margin-bottom: 30px;
+    background:#444;
+}
+.container{
+    width: 926px;
+    padding: 0 0 2px;
+    margin: 0 auto;
+    text-align: left;
+    border: 2px solid #eeeeee;
+    /*background: #ee8ece;*/
+}
+.container .column1{
+    padding: 26px 30px 16px;
+    border-bottom: 1px solid #ebebeb;
+}
+.column1 .title{
+    font-size: 32px;
+    font-weight: normal;
+}
+.title .link{
+    display: block;
+    float: right;
+    width: 80px;
+    height: 29px;
+    padding: 0 0 0 16px;
+    line-height: 29px;
+    font-size: 12px;
+    background: #666;
+    color: white;
+    border-radius: 15px;
+    margin: 7px 0 0 24px;
+}
+.link .fas{
+    color: white;
+}
+
+.container .column2{
+    padding: 24px 30px 20px;
+    border-bottom: 1px solid #ebebeb;
+    background: #ffffff;
+}
+.column2 .left{
+    float: left;
+    width: 86px;
+}
+.column2 .right{
+    float: right;
+    width: 740px;
+    background: #fff;
+}
+.right .txt{
+    margin-bottom: 17px;
+    color: #888;
+    font-size: 12px;
+}
+.right .link{
+    line-height: 15px;
+    font-size: 12px;
+    color: #5a8dcd;
+}
+.right .connect{
+    color: #888888;
+}
+.right .connect .icon{
+    display: inline-block;
+    padding: 3px 6px;
+    background: #ccc;
+}
+.icon .fab{
+    color: #ffffff;
+}
+.right .connect .word{
+    color: #888;
+    font-size: 12px;
+}
+.connect .weibo,
+.connect .qq,
+.connect .weixin{
+    margin-right: 50px;
+}
+.connect span{
+    margin-left: 10px;
+}
+.right h4{
+    margin: 0 0 6px;
+    font-weight: normal;
+    color: #888;
+    font-size: 12px;
+}
+.right li{
+    list-style: none;
+    float: left;
+    width: 760px;
+    height: 19px;
+    padding: 15px 0;
+    margin: -1px 0 0;
+    border-top: 1px solid #f0f0f0;
+    line-height: 19px;
+}
+.right h6{
+    float: left;
+    width: 155px;
+    font-size: 16px;
+    font-weight: normal;
+}
+.right .choose{
+    display: inline;
+    float: left;
+    margin-left: 30px;
+    font-size: 14px;
+}
+.choose .ck{
+    position: relative;
+    top: 2px;
+    margin: 0 6px 0 0;
+}
+.right .sex-choose{
+    display: inline;
+    margin-right: 50px;
+}
+.right .sex-radio{
+    margin-right: 6px;
+}
+.column3{
+    padding: 26px 30px 16px;
+}
+.column3 .btns{
+    position: relative;
+    height: 40px;
+    margin: 5px 0 15px;
+}
+.column3 .btn1,
+.column3 .btn2,
+.column3 .btn3{
+    display: block;
+    float: left;
+    height: 40px;
+    margin-right: 10px;
+    line-height: 40px;
+    font-size: 16px;
+    text-align: center;
+    color: #444;
+    background: #F7F7F7;
+    border: 1px solid #eeeeee;
+}
+.column3 .btn1,
+.column3 .btn2{
+    width: 104px;
+}
+.column3 .btn3{
+    width: 169px;
+}
+.column3 .r-btn{
+    display: block;
+    float: right;
+    margin-right: 10px;
+    width: 104px;
+    line-height: 40px;
+    font-size: 16px;
+    text-align: center;
+    color: #ffffff;
+    background:#739900;
+    border: 1px solid #739900;
+}
+footer{
+    margin-top: 100px;
+}
+
+
+
+

@@ -1,0 +1,29 @@
+$(document).ready(function(){
+    $('.s-hover').hide();
+    $('.g-bd').hover(
+        function(){
+            $('.s-hover').animate({width:'toggle'},500);
+        },
+        function(){
+            $('.s-hover').animate({width:'toggle'},500);
+        }
+    );
+    $('.title1').hide();
+        $('.arrow1').hover(
+            function(){
+                $('.title1').animate({width:'toggle'},500);
+            },
+            function(){
+                $('.title1').animate({width:'toggle'},500);
+            }
+        );
+    $('.title2').hide();
+    $('.arrow2').hover(
+        function(){
+            $('.title2').animate({width:'toggle'},500);
+        },
+        function(){
+            $('.title2').animate({width:'toggle'},500);
+        }
+    );
+});

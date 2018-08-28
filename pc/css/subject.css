@@ -1,0 +1,141 @@
+*{
+    margin:0;
+    padding:0;
+}
+.liyingdasubject{
+    background: #ededef;
+    padding:40px 0;
+}
+@media screen and (min-width: 960px){
+    .main-div {
+        display: inline-block;
+        width: 17vw;
+        height: 155px;
+        margin: 0 2vw 20px 0;
+        background-size: 17vw 37vh;
+        overflow: hidden;
+        text-align: center;
+    }
+    .main{
+        width: 58vw;
+        margin: auto;
+        background: white;
+        padding: 30px 0 0 2vw;
+    }
+}
+@media screen and (max-width: 960px) and (min-width:471px){
+    .main-div {
+        display: inline-block;
+        width: 25vw;
+        height: 155px;
+        margin: 0 2vw 20px 0;
+        background-size: 25vw 50vh;
+        overflow: hidden;
+        text-align: center;
+    }
+    .main{
+        width: 55vw;
+        margin: auto;
+        background: white;
+        padding: 7vh 0 0 2vw;
+    }
+}
+@media screen and (max-width: 471px){
+    .main-div {
+        display: inline-block;
+        width: 53vw;
+        height: 155px;
+        margin: 0 2vw 20px 0;
+        background-size: 53vw 50vh;
+        overflow: hidden;
+        text-align: center;
+    }
+    .main{
+        width: 55vw;
+        margin: auto;
+        background: white;
+        padding: 7vh 0 0 2vw;
+    }
+}
+.main-div:hover{
+    opacity: 0.7;
+}
+.main-div span{
+    vertical-align:middle;
+    position: relative;
+    top:35%;
+    color:white;
+}
+.div{
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/subject/subject1.jpg") no-repeat;
+}
+.div1{
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/subject/subject2.jpg") no-repeat;
+}
+.div2{
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/subject/subject3.jpg") no-repeat;
+}
+.div3{
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/subject/subject4.jpg") no-repeat;
+}
+.div4{
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/subject/subject5.jpg") no-repeat;
+}
+.div5{
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/subject/subject6.jpg") no-repeat;
+}
+.div6{
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/subject/subject7.jpg") no-repeat;
+}
+.div7{
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/subject/subject8.jpg") no-repeat;
+}
+.div8{
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/subject/subject9.jpg") no-repeat;
+}
+.div9{
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/subject/subject10.jpg") no-repeat;
+}
+.div10{
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/subject/subject11.jpg") no-repeat;
+}
+.div11{
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/subject/subject12.jpg") no-repeat;
+}
+.div12{
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/subject/subject13.jpg") no-repeat;
+}
+.div13{
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/subject/subject14.jpg") no-repeat;
+}
+.div14{
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/subject/subject15.jpg") no-repeat;
+}
+.div15{
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/subject/subject16.jpg") no-repeat;
+}
+.div16{
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/subject/subject17.jpg") no-repeat;
+}
+.div17{
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/subject/subject18.jpg") no-repeat;
+}
+.div18{
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/subject/subject19.jpg") no-repeat;
+}
+.div19{
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/subject/subject20.jpg") no-repeat;
+}
+.div20{
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/subject/subject21.jpg") no-repeat;
+}
+.div21{
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/subject/subject22.jpg") no-repeat;
+}
+.div22{
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/subject/subject23.jpg") no-repeat;
+}
+.div23{
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/subject/subject24.jpg") no-repeat;
+}
+

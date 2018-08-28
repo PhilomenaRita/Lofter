@@ -1,0 +1,88 @@
+*{
+    margin:0;
+    padding:0;
+}
+.liyingdalabel{
+    background: #ededef;
+    padding:40px 0;
+}
+.label{
+    margin:auto;
+    width: 938px;
+}
+.labeltop{
+
+    background: white;
+    padding:20px 0 20px 20px;
+}
+.topspan{
+    position: relative;
+}
+.topspan img{
+
+    width: 164px;
+    margin:0 15px 10px 0;
+}
+.topspan span{
+    display: block;
+    left: 14px;
+    top: -26px;
+    z-index: 10;
+    position: absolute;
+    background: #000;
+    border-radius: 5px;
+    color: white;
+    height: 20px;
+    opacity: 0.8;
+    padding: 3px 12px;
+}
+.labelul>li{
+    border-bottom:1px solid #dfdfdf;
+    height: 45px;
+    line-height: 45px;
+    list-style-type:none;
+}
+.firstli{
+    color:#888888;
+}
+.div1{
+    margin-left: 30px;
+    display: inline-block;
+    width: 430px;
+}
+.div2{
+    display:inline-block;
+    width: 150px;
+}
+.div3{
+    display:inline-block;
+    width: 150px;
+}
+.div4{
+    display:inline-block;
+    width: 150px;
+}
+.labelul>li:nth-child(2n){
+    background: #f5f5f5;
+}
+.labelul>li:nth-child(2n-1){
+    background: white;
+}
+.firstli1{
+    color:#444444;
+}
+.div2 span{
+    position: relative;
+    bottom: -10px;
+    display: inline-block;
+    width: 0;
+    border-right: 3px solid #b9d38f;
+}
+.div-span{
+    color:#888888;
+    font-size: 12px;
+}
+.div-img{
+    position: relative;
+    bottom: -5px;
+}

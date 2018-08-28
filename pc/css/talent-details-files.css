@@ -1,0 +1,117 @@
+* {
+    margin: 0;padding: 0;
+}
+a {
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+body {
+
+}
+.header{
+    background: url("../images/body.png") repeat-x;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    z-index: 1000;
+    height: 46px;
+}
+.header h1 {
+    float: left;
+    margin-right: -500px;
+    line-height: 46px;
+    text-shadow: 0 1px 1px #000;
+}
+.header a {
+    float: left;
+    font-size: 16px;
+    color: #fff;
+}
+.header img {
+    width: 26px;
+    height: 26px;
+    margin: 10px 10px 10px 30px;
+}
+.nav {
+    height: 42px;
+    margin-top: 10px;
+}
+.g-vip {
+    position: absolute;
+    right: 172px;
+    width: 26px;
+}
+.g-bd {
+    background: url("../images/dr26x23.png") 0 0 no-repeat;
+    position: fixed;
+    right: 192px;
+    top: 10px;
+    width: 26px;
+    height: 23px;
+}
+.g-hover {
+    position: absolute;
+    left: 6px;
+    top: 0;
+    z-index: 999;
+}
+.s-hover {
+    position:fixed;
+    float: right;
+    height: 23px;
+    width: 167px;
+    line-height: 23px;
+    padding: 0 5px;
+    color: #fff;
+    background:url("../images/vbg.png") no-repeat;
+    font-size: 12px;
+
+}
+.add {
+    position: fixed;
+    right:105px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 12px;
+    background: url("../images/operatenew24.png") no-repeat 0 -90px;
+}
+.add:hover {
+    background-position: 0 -120px;
+}
+.add span {
+    height: 23px;
+    line-height: 23px;
+    color: #fff;
+    padding: 0px 7px 0px 26px;
+}
+.return {
+    position: fixed;
+    right:18px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 12px;
+    background: url("../images/operatenew24.png") no-repeat 0 -30px;
+}
+.return:hover {
+    background-position: 0 -60px;
+}
+.return span {
+    height: 23px;
+    line-height: 23px;
+    color: #fff;
+    padding: 0px 7px 0px 26px;
+}
+.content{
+    position: relative;
+    padding: 46px 60px 0 30px;
+    text-align: left;
+}
+.t-bar{
+    padding: 23px 0 19px;
+    margin: 0 0 20px;
+    border-bottom: 1px solid #ddd;
+}

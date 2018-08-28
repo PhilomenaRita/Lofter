@@ -1,0 +1,165 @@
+*{ padding: 0;margin: 0 }
+body{
+    background: #EBE4DE;
+    font-size: 12px;
+    color: #666;
+    /*background-image: url(../images/lensink/bg.jpg);*/
+}
+.clear{
+    clear:both;
+    height:0;
+    overflow:hidden;
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+.wrapper{
+    width: 100%;
+}
+.nav{
+    position: fixed;
+    right: 10px;
+    background: transparent;
+    z-index: 100;
+    padding: 10px;
+}
+.nav .icon img{
+    vertical-align: middle;
+}
+.nav .txt{
+    display: inline-block;
+    padding: 3px 10px;
+    font-size: 13px;
+    line-height: 16px;
+    margin-right: 10px;
+    background: #252729b0;
+    border-radius: 4px;
+}
+.txt .nav-icon1,
+.txt .nav-icon2 {
+    /*float: left;*/
+    display: inline-block;
+    vertical-align: middle;
+    height: 20px;
+    width: 20px;
+    background: transparent;
+    background-image: url("../images/lensink/operatenew.png");
+}
+.txt .nav-icon1{
+    background-position: -4px -1016px;
+}
+.txt .nav-icon2{
+    background-position: -4px -986px;
+}
+.txt a{
+    color: #FFFFFF;
+}
+.content{
+    width: 95%;
+    margin:60px auto;
+    padding-bottom: 10px;
+}
+.left{
+    float: left;
+    /*background: #737373;*/
+}
+.left .box{
+    padding-bottom: 10px;
+    background: #FFFFFF;
+    zoom: 1;
+}
+.box .bevel{
+    height: 85px;
+    background: #ebe4de57;
+}
+.title{
+    padding: 10px;
+    background: #ebe4de57;
+}
+.title .time{
+    float: left;
+}
+.title .message{
+    float: right;
+}
+.title .message .hot{
+    margin-right: 10px;
+}
+.image img{
+    width: 600px;
+    padding-bottom: 10px;
+}
+.left .introduce{
+    padding: 0 10px 10px;
+    background: #fff;
+}
+.left .introduce p{
+    margin: 10px 0;
+}
+p .cross{
+    text-decoration: line-through;
+}
+
+.right{
+    position: fixed;
+    left: 702px;
+    float: right;
+    width: 300px;
+}
+.right .name-box{
+    float: left;
+    width: 190px;
+    height: 80px;
+    padding: 10px 10px 10px 0;
+    background: #ffffff8c;
+
+}
+.name-box .username{
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 17px;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+    background: #1a1a1a;
+}
+.right .triangle{
+    float: right;
+    display: inline-block;
+    border-bottom: 100px solid white;
+    border-right: 100px solid transparent;
+}
+.right .about{
+    float: left;
+    width: 180px;
+    padding: 10px;
+    overflow: hidden;
+    color: #a8a19e;
+    cursor: pointer;
+}
+.right .image-box{
+    float: left;
+}
+.image-box img{
+    width: 100px;
+    height: 100px;
+}
+.right .slider{
+    width: 100px;
+    float: right;
+}
+.slider .one,
+.slider .two{
+    padding: 5px 0 20px 0;
+    color:#1a1a1a;
+}
+.slider .one li,
+.slider .two li{
+    padding: 3px 0;
+}
+
+
+
+

@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background:#ededed
+}
+a{
+    text-decoration: none;
+}
+.wrapper{
+    width: 100%;
+    ;
+}
+header{
+    height: 82px;
+    padding-bottom: 30px;
+
+}
+.content{
+    width: 924px;
+    margin: 0 auto;
+    background: white;
+    margin-bottom: 100px;
+}
+.title{
+    padding: 26px 30px 16px;
+    border-bottom: 1px solid #ebebeb;
+}
+.title .s-title{
+    font-size: 32px;
+    font-weight: normal;
+}
+.s-title .back{
+    display: inline-block;
+    float: right;
+    margin: 24px 0 0 24px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #5a8dcd;
+}
+.search{
+    height: 390px;
+    margin: 80px 230px 0;
+    /*background: #8dba00;*/
+}
+.intro{
+    float: left;
+    width: 66px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #878787;
+    overflow: hidden;
+}
+.txt{
+    position: relative;
+    float: right;
+    width: 370px;
+    padding: 8px 10px;
+    margin-bottom: 60px;
+    /*background: #f9e8ff;*/
+}
+.txt .text{
+    width: 360px;
+    height: 35px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #444;
+    border: 1px solid #b4b4b4;
+    outline: none;
+    background: #fff;
+}
+.txt p{
+    margin-top: 8px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #b4b4b4;
+    padding-bottom: 40px;
+}
+.txt .btn{
+    width: 104px;
+    height: 40px;
+    color: #b4b4b4;
+    cursor: default;
+    border: 0;
+    outline: none;
+}

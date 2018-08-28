@@ -1,0 +1,52 @@
+body{
+	background-color: #ededef;
+}
+.box_1 {
+	margin:0 auto;
+	padding: 0;
+	width: 928px;
+	height:290px;
+}
+.box_2 {
+	background: white;
+	padding:26px 30px 16px 30px;
+	width: 610px;
+	height:42.67px;
+    border:1px solid #d4d4d5;
+}
+.sub{
+	font-size: 14px;
+	float: right;
+	margin: 24px 0 0 24px;
+	line-height: 18px;
+}
+.sub-first{
+	font-weight: bold;
+}
+h2 {
+	display: inline;
+	font-size: 32px;
+    font-weight: normal;
+    text-align: left;
+    color: #444;
+	font-family: "Hiragino Sans GB","Microsoft YaHei","微软雅黑",tahoma,arial,simhei,"黑体";
+}
+.title {
+	width: 670px;
+	height:85.67px;
+}
+.title a:hover{
+	color: cornflowerblue;
+}
+.box_3 {
+	background: white;
+	margin-top:-1px;
+	padding-top: 40px;
+	color: #aaa;
+	width: 670px;
+	height:164.33px;
+    border:1px solid #d4d4d5;
+	text-align:center;
+    font-size: 24px;
+	border-top: 1px solid #ebebeb;
+}

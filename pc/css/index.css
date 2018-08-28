@@ -1,0 +1,749 @@
+*{
+    margin:0;
+    padding: 0;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+body{
+   background: #ededef;
+    color: #444;
+}
+.container{
+    width: 928px;
+    height: 1000px;
+    margin: 30px 15% 0 15%;
+}
+/*主题内容*/
+.main{
+    float: left;
+    width: 674px;
+    height: 1000px;
+    /*background: #ccc;*/
+}
+/*用户发布工具栏*/
+.publish-bar{
+    margin-bottom: 18px;
+    height: 110px;
+}
+.publish-box{
+    display: flex;
+    height: 100%;
+    background: url(../images/index/publish-bar.png) no-repeat 2px 0;
+}
+.publish-text:hover{
+    background: url(../images/index/publish-bar.png) no-repeat -111px -132px;
+}
+.publish-img:hover{
+    background: url(../images/index/publish-bar.png) no-repeat -223px -132px;
+}
+.publish-music:hover{
+    background: url(../images/index/publish-bar.png) no-repeat -335px -132px;
+}
+.publish-video:hover{
+    background: url(../images/index/publish-bar.png) no-repeat -448px -132px;
+}
+.publish-article:hover{
+    background: url(../images/index/publish-bar.png) no-repeat -560px -132px;
+}
+.publish-box li{
+    flex: 1;
+    height: 110px;
+}
+.publish-box li:hover{
+    cursor: pointer;
+}
+.user img{
+    width: 100%;
+    height: 100%;
+}
+/*发表消息*/
+.m-list{
+    margin: 0 0 16px;
+}
+.m-list::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.mlist-img{
+    float: left;
+}
+.avatar{
+    position: relative;
+}
+.v-icon{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    bottom: 0;
+    left: 75%;
+    z-index: 1;
+    background: url(../images/index/v-icon.png);
+}
+.mlist-content-box{
+    float: right;
+    width: 585px;
+}
+.mlist-content{
+    position: relative;
+    margin-left:24px;
+    background: #fff;
+    height: auto;
+    /*border: 1px solid #C3C3C3;*/
+    /*box-shadow: 1px 1px 1px #C3C3C3;*/
+}
+.mlist-content:hover{
+    background: linear-gradient(to left bottom,
+    transparent 50%, #C3C3C3 0)
+    no-repeat 100% 0 / 20px 20px,
+    linear-gradient(-135deg,
+            transparent 15px, #fff 0);
+}
+.mlist-content::before{
+    position: absolute;
+    left: -20px;
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-width: 10px 10px; border-style:solid;
+    border-color: #fff #fff transparent transparent;
+}
+.mlist-content::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.ctn{
+    padding: 28px;
+}
+.who{
+    font-size: 14px;
+}
+.who a{
+    color: #888;
+}
+.m-list a:hover{
+    color: #7594B3;
+}
+.ctn-title{
+    margin: 16px auto;
+    font-size: 18px;
+}
+.main-img{
+    float: left;
+    max-width: 164px;
+    max-height: 400px;
+    overflow: hidden;
+    margin: 0 25px 5px 0;
+}
+.main-img img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.main-text{
+    font-size: 14px;
+    line-height: 1.6;
+    /*文字换行显示*/
+    word-wrap : break-word;
+}
+.main-text p{
+    margin-bottom: 10px;
+}
+.ctn-main::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.ctn-bottom{
+    font-size: 12px;
+    height: 20px;
+    margin-top: 10px;
+}
+.ctn-icon{
+    background: url(../images/index/icon.png) no-repeat 999px 999px;
+}
+.ctn-bottom a{
+    display: inline-block;
+    color: #aaa;
+}
+.ctn-label{
+    float: left;
+    max-width: 176px;
+    height: 100%;
+    overflow: hidden;
+}
+.ctn-label .ctn-icon{
+    background-position: 0 -103px;
+}
+.ctn-label img{
+    position: relative;
+    vertical-align: middle;
+}
+.label-item{
+    position: relative;
+    display: inline-block;
+    margin: 0 10px 10px 0;
+}
+.label-box{
+    display: inline-block;
+    position: relative;
+}
+.bottom-right{
+    float: right;
+}
+.like{
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 18px;
+    vertical-align: top;
+    background: url(../images/index/heart.jpg) no-repeat 0 -36px;
+}
+.link{
+    background: url(../images/index/heart.jpg) no-repeat 0 -67px;
+}
+.like:hover{
+    background: url(../images/index/heart.jpg) no-repeat 0 1px;
+}
+.dislike-left{
+    position: absolute;
+    left: -20px;
+    bottom: 0;
+    width: 27px;
+    height: 36px;
+    opacity: 0;
+    background: url(../images/index/icon6.png) 0 -109px no-repeat;
+    animation: unlike-left 1s;
+}
+.dislike-right{
+    position: absolute;
+    bottom: 0;
+    width: 27px;
+    height: 36px;
+    opacity: 0;
+    background: url(../images/index/icon6.png) -27px -109px no-repeat;
+    animation: unlike-r 1s;
+}
+.like-act{
+    position: absolute;
+    left: -20px;
+    bottom: 0;
+    width: 50px;
+    height: 42px;
+    background: url(../images/index/icon6.png) 0 -148px no-repeat;
+    opacity: 0;
+    animation: like 1s;
+}
+@keyframes like {
+    0%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: scale(1.1) translate(0,-60px);
+    }
+}
+@keyframes unlike-left {
+     0%{
+         opacity: 0;
+     }
+     10%{
+         opacity: 0.75;
+         transform: translate(0,-18px);
+     }
+     60%{
+         opacity: 1;
+         transform: translate(-18px,-15px) scale(1.2,0.9) rotate(-10deg);
+         transform-origin: left bottom;
+     }
+    90%{
+        transform: translate(-22px,-19px) scale(1.2,0.9) rotate(-20deg);
+        transform-origin: left bottom;
+    }
+     100%{
+         opacity: 0;
+         transform: translate(-22px,0);
+     }
+ }
+@keyframes unlike-r {
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 0.75;
+        transform: translate(0,-18px);
+    }
+    60%{
+        opacity: 1;
+        transform: translate(18px,-15px) scale(1.2,0.9) rotate(10deg);
+        transform-origin: right bottom;
+    }
+    90%{
+        opacity: 0;
+        transform: translate(22px,-19px) scale(1.2,0.9) rotate(20deg);
+        transform-origin: right bottom;
+    }
+    100%{
+        opacity: 0;
+        /*transform: translate(22px,0);*/
+    }
+}
+.ctn-bottom::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+/*侧边栏*/
+.sidebar{
+    float: right;
+    width: 230px;
+    height: 1000px;
+    /*background: darkgoldenrod;*/
+}
+.side-box{
+    margin-bottom: 12px;
+}
+.menu{
+    border: 1px solid #b2b2b2;
+}
+.menu ul{
+    height: 100%;
+}
+.menu li{
+    background: #F3F3F3;
+    height: 38px;
+    border-top: 1px solid #fff;
+}
+.menu li:not(:first-child):hover{
+    background: #fff;
+}
+.menu .menu-first{
+    position: relative;
+    height: 54px;
+    box-shadow: 0 2px 2px #B2B2B2;
+    border-bottom: 1px solid  #dfdfdf;
+}
+.menu li:nth-child(6){
+    box-shadow: 0 0.8px 0.8px #B2B2B2;
+    border-bottom: 1px solid  #dfdfdf;
+}
+.letter-item{
+    position: relative;
+    box-shadow: 0 0.8px 0.8px #B2B2B2;
+    border-bottom: 1px solid  #dfdfdf;
+}
+
+.menu-first a:hover{
+    background: #fff;
+}
+.menu-user{
+    float: left;
+    display: block;
+    width: 171px;
+    height: 100%;
+    border-right: 1px solid #dfdfdf;
+    /*padding: 10px 0 7px 16px;*/
+}
+.drop{
+    float: right;
+    display: block;
+    width: 55px;
+    height: 54px;
+    /*background: url(../images/index/icon4-24.png) no-repeat -196px -147px;*/
+}
+.drop-icon{
+    display: block;
+    width: 55px;
+    height: 54px;
+    background: url(../images/index/icon4-24.png) no-repeat -196px -147px;
+}
+.menu-icon{
+    display: inline-block;
+    width: 25px;
+    height: 18px;
+    background: url(../images/index/icon24.png) no-repeat 999px 999px;
+}
+.txt{
+    display: inline-block;
+    margin-left: 16px;
+    margin-top: 10px;
+}
+.menu-name{
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #444;
+}
+.menu-email{
+    display: block;
+    font-size: 12px;
+    color: #444;
+}
+.menu-item{
+    display: block;
+    height: 18px;
+    margin: 10px 0;
+    padding-left: 15px;
+}
+.item-txt{
+    display: inline-block;
+    height: 18px;
+    font-size: 14px;
+    vertical-align: top;
+    color: #444;
+}
+.item-num{
+    float: right;
+    height: 18px;
+    font-size: 12px;
+    margin-right: 14px;
+    color: #888;
+}
+.menu .setting{
+    height: 32px;
+    background: #e7e7e7;
+}
+.setting span{
+    color: #888;
+    font-size: 12px;
+}
+.article-icon{
+    background-position: 0 -1684px;
+}
+.follow-icon{
+    background-position: 0 -288px;
+}
+.notice-icon{
+    background-position: 0 -1823px;
+}
+.letter-icon{
+    background-position: 0 -1966px;
+}
+.setting-icon{
+    background-position: 0 -1601px;
+}
+.ad{
+    height: 46px;
+    background: url(../images/index/daren_plan.png);
+}
+.topic{
+    height: 132px;
+}
+.topic-item{
+    position: relative;
+}
+.topic-img{
+    display: block;
+    height: 98px;
+}
+.cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    background: rgba(0,0,0,.3);
+    width: 100%;
+    height: 100%;
+}
+.cover-txt{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    color: #fff;
+    z-index: 2;
+}
+.more-topic span{
+    color: #888;
+    font-size: 12px;
+}
+.more-topic{
+    height: 34px;
+    background: #dfdfdf;
+    border-left: 1px solid  #dfdfdf;
+    border-right: 1px solid  #dfdfdf;
+    box-shadow: 0 0.8px 0.8px #B2B2B2;
+}
+.more-topic a{
+    padding-top: 8px;
+    margin: 0;
+}
+.more-topic:hover{
+    background: #fff;
+}
+.topic-icon{
+    background-position: 0 -3340px;
+}
+.activity{
+    height: 331px;
+}
+.activity-area{
+    height: 282px;
+    background: #fff;
+    padding: 12px 8px 0 8px;
+}
+.act-title{
+    color: #333;
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 20px;
+}
+.act-join{
+    color: #999;
+    font-size: 11px;
+    line-height: 20px;
+}
+.act-img-box{
+    margin-top: 5px;
+    margin-left: 2px;
+    height: 214px;
+}
+.act-img{
+    float: left;
+    position: relative;
+    margin: 0 6px 6px 0;
+    width: 100px;
+    height: 100px;
+}
+.act-img img{
+    max-width: 100%;
+    max-height: 100%;
+}
+/*.act-img a{*/
+    /*position: relative;*/
+/*}*/
+.act-cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background: #5A8DCD;
+    opacity: 0;
+}
+.act-cover:hover{
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+/*hover悬浮提示框*/
+.hover-down-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.down-icon{
+    position: absolute;
+    left: 75px;
+    top: -16px;
+    width: 0;
+    height: 0;
+    margin-left: 75px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent #191919 transparent;
+    z-index: 999;
+}
+.down-content{
+    position: absolute;
+    width: 450px;
+    height: 260px;
+    background: #191919;
+    z-index: 999;
+}
+
+/*hover悬浮框*/
+.hover-header{
+    height: 50px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.hover-header a:hover{
+    color: #fff;
+}
+.header-box{
+    padding: 10px;
+}
+.sm-img{
+    float: left;
+    margin-right: 10px;
+    vertical-align: middle;
+    position: relative;
+}
+.sm-img img{
+    width: 30px;
+    height: 30px;
+}
+.sm-img .v-icon{
+    background: url(../images/index/mr14x14.png) 0 0 no-repeat;
+    left: 20px;
+    top: 20px;
+    z-index: 10;
+    width: 15px;
+    height: 15px;
+}
+.sm-info{
+    float: left;
+    width: 210px;
+    line-height: 15px;
+}
+.sm-title{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.sm-title a{
+    color: #ccc;
+}
+.subinfo{
+    display: inline-block;
+    color: #888;
+}
+.subinfo span{
+    margin-right: 8px;
+}
+.subinfo a{
+    color: #888;
+}
+.sm-follow{
+    float: right;
+}
+.follow-menu{
+    float: left;
+    display: block;
+    width: 40px;
+    height: 28px;
+
+}
+.follow-bc{
+    background: url(../images/index/icon5-24.png) 999px 999px no-repeat;
+}
+.menu-btn{
+    display: block;
+    width: 20px;
+    height: 28px;
+    background-position: 0px -344px;
+}
+.follow{
+    float: right;
+    height: 100%;
+}
+.u-btn{
+    display: block;
+    width: 54px;
+    height: 30px;
+    background-color: rgb(51, 51, 51);
+    letter-spacing: 1px;
+    margin: 2px 0px 0px;
+    padding: 0px 0px 0px 23px;
+    border-radius: 2px;
+    background-position: 5px -309px;
+}
+.u-btn-follow{
+    display: block;
+    width: 66px;
+    height: 30px;
+    line-height: 28px;
+    text-align: center;
+    margin: 2px 0px 0px;
+    background: -webkit-linear-gradient(top, rgb(132, 175, 0) 0%, rgb(121, 162, 0) 100%);
+    border-radius: 2px;
+    text-align: center;
+}
+.u-btn-follow:hover{
+   opacity: .8;
+}
+ .u-btn-follow b{
+    color: rgb(255, 255, 255);
+    font-family: arial;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: rgb(117, 155, 0) 0px 1px 0px;
+}
+.follow-btn{
+    font-size: 15px;
+    color: #fff;
+    text-shadow: rgba(117, 155, 0, 0.65) 0px 1px 0px;
+    vertical-align: 3px;
+}
+.u-btn span{
+    color: rgb(136, 136, 136);
+    line-height: 30px;
+    font-size: 14px;
+}
+.hover-header::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.hover-content{
+    height: 118px;
+    padding: 20px 0 0 10px;
+}
+.ctn-item{
+    position: relative;
+    display: inline;
+    margin-right: 1px;
+    width: 130px;
+    height: 98px;
+}
+.ctn-item img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.ctn-item .act-cover{
+    width: 130px;
+    height: 98px;
+    top: -85px;
+}
+.hover-footer{
+    height: 54px;
+}
+.footer-ctn{
+    height: 13px;
+    line-height: 13px;
+    text-align: left;
+    color: rgb(102, 102, 102);
+    font-size: 12px;
+    padding: 20px 5px 21px 19px;
+}
+.footer-ctn a{
+    display: inline-block;
+    height: 13px;
+    color: rgb(102, 102, 102);
+    margin-right: 10px;
+}
+.footer-ctn a:hover{
+    color: #fff;
+}
+
+/*工具栏*/
+.text-box{
+    height: auto;
+}
+@media only screen and (max-width: 992px) {
+    .container{
+        width: 928px;
+        margin: 30px 2.5% 0 2.5%;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .container{
+        width: 928px;
+        margin: 30px 5% 0 5%;
+    }
+}
+

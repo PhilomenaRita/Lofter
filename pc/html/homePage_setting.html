@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主页设置 | </title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/homePage_setting.css">
+    <script src="https://cdn.bootcss.com/vue/2.2.2/vue.min.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="nav-bar">
+        <div id="nav-title">
+            <span v-if="box" @click="showToggle" class="title-bar">主页信息</span>
+            <div class="hideOne" v-show="isShow">
+                <div class="item_t">头像</div>
+                <div class="item_d">
+                    <img src="../images/setting/photo.jpg" alt="">
+                    <p>支持jpg、gif、png、bmp格式</p>
+                    <a class="item_btn" href="">修改头像</a>
+                </div>
+                <div class="clear"></div>
+                <div class="item_t">名称</div>
+                <div class="item_name">
+                    <input type="text">
+                </div>
+                <div class="item_t">介绍
+                    <label class="item_r">你还可以输入<span>500</span>字</label>
+                    <div class="clear"></div>
+                </div>
+                <div class="intro-box">
+                    <textarea></textarea>
+                </div>
+                <div class="item_t">个性域名</div>
+                <div class="item_name">
+                    <input type="text" placeholder="qianshiguang856.lofter.com">
+                </div>
+            </div>
+            <span class="title-bar">模板选择</span>
+            <span class="title-bar">模板自定义</span>
+            <span class="title-bar">链接</span>
+            <span class="title-bar">互动</span>
+            <span class="title-bar">同步</span>
+            <span class="title-bar">归档</span>
+            <span class="title-bar">版权</span>
+            <span class="title-bar">手机模板</span>
+        </div>
+        <div class="bar-btn">
+            <a class="br-tn" href="#">保存并关闭</a>
+            <a class="br-tn" href="#">保 存</a>
+            <a class="br-tn" href="#">取 消</a>
+        </div>
+
+    </div>
+    <div class="separate"></div>
+    <div class="content">
+        <div class="box1">
+            <div class="self-info">
+                <i><img src="../images/setting/photo.jpg" alt=""></i>
+                <p class="name">姓名</p>
+            </div>
+            <div class="search">
+                <form action="">
+                    <i class="fas fa-search"></i>
+                    <input class="text" type="text" value="搜索">
+                </form>
+            </div>
+            <div class="clear"></div>
+            <p class="sidelist">
+                <a href="">归档</a>
+                <a href="">RSS</a>
+            </p>
+        </div>
+        <div class="box2">
+            <div class="article">
+                <div class="side">
+                    <a class="day" href="">14</a>
+                    <a class="month" href="">03</a>
+
+                </div>
+                <div class="ar-main">
+                    <h2>LOFTER，从简约中领悟品质的真谛</h2>
+                    <p>有没有那么一件单品、一张照片、一副美景或一杯暖饮，让你流连忘返、回味无穷？LOFTER的视觉设计，希望悄悄的留住你的视线，带给你唯一却熟悉的感觉…</p>
+                    <img src="../images/setting/1.jpg" alt="">
+                    <div class="link">
+                        <a href="#">热度（661）</a>
+                        <a href="#">全文链接</a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="article">
+                <div class="side">
+                    <a class="day" href="">21</a>
+                    <a class="month" href="">09</a>
+
+                </div>
+                <div class="ar-main">
+                    <img src="../images/setting/2.jpg" alt="">
+                    <p class="s-title">没有文字，多么孤单</p>
+                    <div class="link">
+                        <a href="#">热度（1372）</a>
+                        <a href="#">全文链接</a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="article">
+                <div class="side">
+                    <a class="day" href="">25</a>
+                    <a class="month" href="">08</a>
+
+                </div>
+                <div class="ar-main">
+                    <img src="../images/setting/3.jpg" alt="">
+                    <p class="s-title">专注，从LOFTER开始</p>
+                    <div class="link">
+                        <a href="#">热度（383）</a>
+                        <a href="#">全文链接</a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="article">
+                <div class="side">
+                    <a class="day" href="">24</a>
+                    <a class="month" href="">08</a>
+
+                </div>
+                <div class="ar-main">
+                    <img src="../images/setting/4.jpg" alt="">
+                    <p class="s-title">随性而为</p>
+                    <div class="link">
+                        <a href="#">热度（596）</a>
+                        <a href="#">全文链接</a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="article">
+                <div class="side">
+                    <a class="day" href="">24</a>
+                    <a class="month" href="">08</a>
+
+                </div>
+                <div class="ar-main">
+                    <img src="../images/setting/5.jpg" alt="">
+                    <p class="s-title">LOFTER——专注兴趣，分享创作</p>
+                    <p>LOFTER是网易2011年8月中旬推出的一款轻博客，并首次采用独立域名LOFTER.COM</p>
+                    <p>LOFTER一词是LOFT的引申，LOFT的意思是宽广开放的自由创作空间，而在这空间里专注兴趣，分享创作的人，自然就是LOFTER。</p>
+                    <div class="link">
+                        <a href="#">热度（596）</a>
+                        <a href="#">全文链接</a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="article">
+                <div class="side">
+                    <a class="day" href="">24</a>
+                    <a class="month" href="">08</a>
+
+                </div>
+                <div class="ar-main">
+                    <img src="../images/setting/6.jpg" alt="">
+                    <p class="s-title">如果不把创作纪录下来 <br>灵感会是多么的孤独 </p>
+                    <div class="link">
+                        <a href="#">热度（596）</a>
+                        <a href="#">全文链接</a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="article">
+                <div class="side">
+                    <a class="day" href="">24</a>
+                    <a class="month" href="">08</a>
+                </div>
+                <div class="ar-main">
+                    <p class="s-title">有这么一些人，喜欢拍点什么，写日志总是想不到标题，拍了一堆相片，不知如何组成一个文章，不知如何或者不想加上一些修饰就发布上来…… </p>
+                    <p class="s-title">他们生活随 意，常常需要在工作台上贴上一些黄色的小纸条来提醒自己杂乱的工作，这时，真的需要一个LOFTER，也来参与一下热闹的互联网，微博你玩不起来，博客想 不到主题，不知道如何发布组图也不想发布，你也不知道如何组织文字和整理思路，但是你有一堆的好作品或者一堆好相片，也想在大伙里路过一下，让大伙转过头 来注意一下你……</p>
+                    <p class="s-title">于是LOFTER遇上了你，你遇上了LOFTER</p>
+                    <div class="link">
+                        <a href="#">热度（283）</a>
+                        <a href="#">全文链接</a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="article">
+                <div class="side">
+                    <a class="day" href="">24</a>
+                    <a class="month" href="">08</a>
+
+                </div>
+                <div class="ar-main">
+                    <img src="../images/setting/7.png" alt="">
+                    <p class="s-title">LOFTER显得非常“文艺”，允许展现微博不允许的个性；比博客更简单，更方便分享和维护——发一张照片就可以是一条像模像样的博客。</p>
+                    <div class="link">
+                        <a href="#">热度（596）</a>
+                        <a href="#">全文链接</a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/setting-hidebox.js"></script>
+
+</body>
+</html>

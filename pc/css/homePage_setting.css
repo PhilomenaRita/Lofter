@@ -1,0 +1,255 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #dfdfe1;
+    background-image: url("../images/setting/bg.png");
+    color: #737373;
+}
+.clear{
+    clear:both;
+    height:0;
+    overflow:hidden;
+}
+a{
+    text-decoration: none;
+    color:#737373;
+}
+.wrapper{
+    width: 100%;
+}
+.nav-bar{
+    position: fixed;
+    height: 40px;
+    width: 100%;
+    z-index: 100;
+    padding: 0 10px;
+    background: #eeeeee;
+}
+
+#nav-title .title-bar{
+    display: block;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 16px;
+    cursor: pointer;
+    font-size: 14px;
+    white-space: nowrap;
+}
+.hideOne{
+    position: absolute;
+    top:40px;
+    left: 10px;
+    width: 271px;
+    zoom: 1;
+    z-index: 5;
+    background: #fff;
+    padding: 20px 10px 20px 20px;
+    border: 1px solid #c0c0c0;
+}
+.hideOne .item_t{
+    font-size: 12px;
+    padding: 10px 0;
+     color:#444;
+}
+.hideOne .item_d img{
+    display: block;
+    float: left;
+    width: 64px;
+    height: 64px;
+}
+.hideOne .item_d p{
+    float: left;
+    font-size: 12px;
+    padding: 0 0 10px 15px;
+}
+.hideOne .item_btn{
+    display: block;
+    float: left;
+    margin-left: 16px;
+    padding: 6px 20px;
+    text-align: left;
+    font-size: 12px;
+    color:#fff;
+    background: #777;
+}
+.hideOne input{
+    height: 17px;
+    width: 240px;
+    padding: 6px 10px 5px;
+    font-size: 12px;
+    border: 1px solid #cececf;
+    outline: none;
+}
+.hideOne .item_r{
+    margin-left: 125px;
+    color: #888;
+}
+.hideOne .intro-box{
+    margin-bottom: 25px;
+}
+.intro-box textarea{
+    width: 239px;
+    height: 120px;
+    padding: 10px 10px 9px;
+    border: 1px solid #cececf;
+    outline: none;
+}
+.nav-bar .bar-btn{
+    /*position: relative;*/
+    /*right: 0;*/
+    float: right;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+.bar-btn .br-tn{
+    display: inline-block;
+    zoom: 1;
+    line-height: 30px;
+    text-align: center;
+    background: #8dba00;
+    width: 88px;
+    /*padding: 0 10px;*/
+    height: 30px;
+    font-size: 12px;
+    border: 0;
+    cursor: pointer;
+    color:#ffffff;
+}
+
+.separate{
+    height: 100px;
+}
+.content{
+    width:730px;
+    margin: auto;
+    /*background: #8dba00;*/
+}
+.content .box1{
+    width: 100%;
+    padding: 25px 30px;
+    box-sizing: border-box;
+    background: #fff;
+    margin-bottom: 40px;
+}
+.box1 .self-info{
+    float: left;
+    box-sizing: border-box;
+}
+.self-info i{
+    width: 80px;
+    height: 80px;
+    float: left;
+    /*background: #7594b3;*/
+
+}
+.self-info img{
+    border-radius: 50px;
+}
+.self-info .name{
+    display: inline-block;
+    margin-top: 10px;
+    padding-left:40px;
+    color: #4c4c4c;
+    font-size: 26px;
+}
+.search{
+    float: right;
+}
+.search form{
+    padding: 5px 10px;
+    border: 1px solid #CBCBCB;
+    background-color: #f7f7f7;
+    line-height: 16px;
+    border-radius: 15px;
+}
+.search .text{
+    border: none;
+    outline: none;
+    background: #f7f7f7;
+}
+.search .fas{
+    position: relative;
+
+}
+.sidelist{
+    padding-left: 115px;
+}
+.sidelist a{
+    display: inline-block;
+    padding: 2px 8px;
+    margin: 0 12px 10px 0;
+    font-size: 12px;
+    color: #FEFEFE;
+    background-color: #828d95;
+    border-radius: 20px;
+}
+.content .box2{
+    width: 100%;
+    padding: 25px 30px;
+    box-sizing: border-box;
+    background: #fff;
+}
+.box2 .article{
+    padding-bottom: 48px;
+}
+.box2 .side{
+    float: left;
+}
+.side .day{
+    width: 70px;
+    height: 70px;
+    display: block;
+    border-style: solid;
+    border-width: 5px;
+    font-family: "Rokkitt",arial,serif;
+    font-size: 40px;
+    text-align: center;
+    line-height: 70px;
+    border-radius: 40px;
+    color: #828d95;
+}
+
+.side .month{
+    display: inline-block;
+    padding: 0 25px;
+    margin: 6px 0 0;
+    color: #c0c0c0;
+    font-size: 24px;
+    text-align: center;
+    /*background: #7594b3;*/
+}
+.box2 .ar-main{
+    float: right;
+    width: 80%;
+    border-bottom: 1px dashed #737373;
+    padding: 0 15px 0 20px;
+    padding-bottom: 40px;
+}
+.ar-main h2{
+    font-weight: normal;
+    color: #4c4c4c;
+    font-size: 26px;
+}
+.ar-main p{
+    padding: 15px 0;
+    line-height: 1.8;
+    font-size: 14px;
+}
+.ar-main img{
+    padding-bottom: 15px;
+}
+.ar-main .link{
+    padding: 20px 0;
+}
+.ar-main .link a{
+    font-size: 12px;
+    margin-right: 25px;
+}
+.ar-main .s-title{
+    font-size: 18px;
+}
+
+

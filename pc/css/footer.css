@@ -1,0 +1,14 @@
+.g-ft, .g-ft a, .g-ft a:hover {
+    color: #74808b;
+}
+
+.g-ft {
+    margin-top: 25px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}

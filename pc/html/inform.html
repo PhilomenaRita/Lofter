@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../images/lofter-logo.jpg">
+    <link type="text/css" href="../css/nav.css" rel="stylesheet">
+    <link type="text/css" href="../css/footer.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/inform.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../js/index/tooltip.css">
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script src="../js/nav.js"></script>
+    <title>首页-通知 | LOFTER(乐乎)</title>
+</head>
+<body>
+<div class="nav-hd">
+    <div class="nav-hdc">
+
+        <!--logo-->
+        <h1 class="nav-logo">
+            <a href="#" style="background-position: 0 0;">LOFTER-网易轻博</a>
+        </h1>
+        <!--导航和搜索框部分-->
+        <div class="nav-nav">
+            <!--导航栏-->
+            <ul class="nav1">
+                <!--首页、浏览、APP的页面的li加上类名 class="j-crt" 可以直接有:下方的三角形和字体颜色为白色-->
+                <!--1-->
+                <li class="j-crt">
+                    <a href="index.html">首页</a>
+                </li>
+                <!--2-->
+                <li>
+                    <a href="trend.html">浏览</a>
+                </li>
+                <!--3-->
+                <li>
+                    <a href="app.html">APP</a>
+                </li>
+                <!--4-->
+                <li>
+                    <a target="_blank" href="topic.html">话题</a>
+                </li>
+                <!--5-->
+                <li>
+                    <a target="_blank" href="talent.html">达人</a>
+                </li>
+                <!--6-->
+                <li>
+                    <a target="_blank" href="setting.html">设置</a>
+                </li>
+                <!--7-->
+                <li>
+                    <a href="#" class="more">更多
+                        <span class="more tbtag">&nbsp;&nbsp;&nbsp;</span>
+                    </a>
+                    <!--更多的下拉菜单-->
+                    <div class="a-w-sel a-w-sel-4 tbtag a-w-sel-do" id="demo">
+                        <div class="w-sel w-sel-4" style="margin-top: 0px;margin-left: 15px;">
+                            <div class="selc">
+                                <div class="selcc tbtag">
+                                    <div class="seli"><a class="nx-2" href="#">寻找好友</a></div>
+                                    <div class="seli"><a class="nx-6" href="#">导入导出</a></div>
+                                    <div class="seli"><a class="nx-3" href="#">移动客户端</a></div>
+                                    <div class="seli"><a class="nx-10" href="#">ART</a></div>
+                                    <div class="seli"><a class="nx-8" href="#">LOFTCam-用心创造滤镜</a></div>
+                                    <div class="seli" id="uapptip2"><a class="nx-7" href="#">UAPP-创建个人应用</a></div>
+                                    <div class="seli"><a class="nx-4" href="#">帮助及反馈</a></div>
+                                    <div class="seli"><a class="nx-5" href="#">退出</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <!--搜索框-->
+            <div class="nav2" id="schtagbox">
+                <!--框-->
+                <div class="ssch tbtag">
+                    <form class="xtag">
+                        <a href="#" class="btn xtag"></a>
+                        <label class="xtag" style="display:none;">搜索用户、标签</label>
+                        <input type="text" placeholder="搜索用户、标签" class="xtag" onfocus="this.isfocus = true;" id="hide">
+                        <div class="xtag a-show-mask">
+                            <div class="new" style="" id="newleave"></div>
+                        </div>
+                    </form>
+                </div>
+                <!--搜索框下拉菜单-->
+                <div class="m-ssch2  m-ssch-act" style="position:absolute;top:100%;">
+                    <div class="suggest">
+                        <div class="sugbox xtag" style="visibility: hidden;">
+                        </div>
+                    </div>
+                    <!--菜单-->
+                    <div class="a-w-sel a-w-sel-5 a-w-sel-do" id="demo2">
+                        <div id="taglist" class="w-sel w-sel-5 tbtag" style="margin-top: 0px;">
+                            <div class="selc">
+                                <!--我的订阅-->
+                                <div class="m-subscribetags">
+                                    <div class="subttl">我的订阅</div>
+                                    <div id="favtagcnew" class="selcc tags">
+                                        <div class="seli" id="ftagid704052737">
+                                            <a href="#">
+                                                <div class="name ">设计</div>
+                                                <div class="img"><img src="../images/navimg.jpg"></div>
+                                                <div class="count fctag">753篇新文章</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--热门推荐-->
+                                <div class="m-hotrecomtags">
+                                    <div class="subttl">热门推荐</div>
+                                    <div class="selcc tags">
+                                        <!--1-->
+                                        <div class="seli">
+                                            <a href="#">
+                                                <div class="name">魅蓝手机LOFTER六周年摆拍摄影大赛</div>
+                                                <div class="count fctag">0参与</div>
+                                            </a>
+                                        </div>
+                                        <!--2-->
+                                        <div class="seli">
+                                            <a href="#">
+                                                <div class="name">决战平安京</div>
+                                                <div class="count fctag">2522参与</div>
+                                            </a>
+                                        </div>
+                                        <!--3-->
+                                        <div class="seli">
+                                            <a href="#">
+                                                <div class="name">戏精主子争宠记</div>
+                                                <div class="count fctag">2891参与</div>
+                                            </a>
+                                        </div>
+                                        <!--4-->
+                                        <div class="seli">
+                                            <a href="#">
+                                                <div class="name">猪猪女孩正名记</div>
+                                                <div class="count fctag">699参与</div>
+                                            </a>
+                                        </div>
+                                        <!--5-->
+                                        <div class="seli">
+                                            <a href="#">
+                                                <div class="name">写给空气的情话</div>
+                                                <div class="count fctag">22272参与</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--中间-->
+
+<div class="box_1">
+    <div class="box_2">
+        <h2 class="title">
+            <span class="name">通知</span>
+            <a class="sub" href="">ART</a>
+            <a class="sub" href="">推荐的文章</a>
+            <a class="sub" href="">评论</a>
+            <a class="sub sub-first" href="">主页</a>
+        </h2>
+    </div>
+    <div class="box_3"></div>
+    <div class="side-box" style="float:right;margin-top: -292px">
+        <div class="menu">
+            <ul>
+                <li class="menu-first" style="margin-left: 0">
+                    <a href="#" class="menu-user">
+                            <span class="txt">
+                                <span class="menu-name">xxxxx</span>
+                                <span class="menu-email">xxxxxxx.lofter.com</span>
+                            </span>
+                    </a>
+                    <a href="" class="drop">
+                        <span class="drop-icon"></span>
+                    </a>
+                </li>
+                <li style="margin-left: 0">
+                    <a href="" class="menu-item">
+                        <span class="menu-icon article-icon"></span>
+                        <span class="item-txt">文章</span>
+                        <span  class="item-num">0</span>
+                    </a>
+                </li>
+                <li style="margin-left: 0">
+                    <a href="" class="menu-item">
+                        <span class="menu-icon follow-icon"></span>
+                        <span class="item-txt">关注</span>
+                        <span  class="item-num">0</span>
+                    </a>
+                </li>
+                <li style="margin-left: 0">
+                    <a href="" class="menu-item">
+                        <span class="menu-icon notice-icon"></span>
+                        <span class="item-txt">通知</span>
+                        <span  class="item-num">0</span>
+                    </a>
+                </li>
+                <li class="letter-item" style="margin-left: 0">
+                    <a href="" class="menu-item">
+                        <span class="menu-icon letter-icon"></span>
+                        <span class="item-txt">私信</span>
+                        <span  class="item-num">0</span>
+                    </a>
+                </li>
+                <li class="setting" style="margin-left: 0">
+                    <a href="" class="menu-item">
+                        <span class="menu-icon setting-icon"></span>
+                        <span class="item-txt">设置个人主页</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--底部-->
+
+<div class="g-ft">
+    <div class="m-ft2">
+        <a target="_blank" rel="nofollow" href="#">联系我们</a>
+        <span>|</span>
+        <a target="_blank" rel="nofollow" href="#">招贤纳士</a>
+        <span>|</span>
+        <a target="_blank" rel="nofollow" href="#">移动客户端</a>
+        <span>|</span>
+        <a target="_blank" rel="nofollow" href="#">风格模板</a>
+        <span>|</span>
+        <a target="_blank" rel="nofollow" href="#">官方博客</a>
+    </div>
+    <div style="margin-top:10px;">网易公司版权所有　©1997-2018　
+        <a rel="nofollow" target="_blank" href="#" style="position:relative;">
+            <img src="../images/navpolice.png" style="width:14px;height:16px;position:absolute;left:0;top:0;">
+            <span style="margin-left:18px;">浙公网安备 33010002000017号</span>
+        </a>
+        <span style="margin-left:20px;">ICP备：浙B2-20090185-5</span>
+        <span style="margin-left:20px;">增值电信业务经营许可证：浙B2-20090185</span>
+    </div>
+</div>
+
+
+</body>
+</html>
