@@ -1,0 +1,28 @@
+*{
+    padding:0;
+    margin: 0;
+}
+.nav{
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    height: 55px;
+    font-size: 18px;
+    padding: 10px 10px 0 10px;
+    border-bottom: #EDEDEF solid 0.1px;
+}
+.nav_left{
+    width: 5%;
+    height: 100%;
+    float: left;
+    line-height: 36px;
+}
+
+.nav_right{
+    float: right;
+    width: 95%;
+    line-height: 36px;
+}
+.nav_right p{
+    text-align: center;
+}

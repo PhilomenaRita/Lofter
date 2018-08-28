@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header,footer,.second-part-content{
+    display: block;
+}
+/*头部*/
+header{
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 52px;
+    background-color: #fff;
+    z-index: 999;
+}
+header .header-left{
+    flex: 0 0 20vw;
+    /*background-color: orange;*/
+    height: 52px;
+    line-height: 52px;
+}
+header .left-content{
+    width: 30px;
+    height: 30px;
+    /*background-color: hotpink;*/
+    margin: 0 auto;
+    margin-top: 11px;
+}
+header .left-content span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url(../images/左箭头.svg)no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+header .header-right{
+    flex: 1;
+    /*background-color: skyblue;*/
+    height: 52px;
+    line-height: 52px;
+}
+@media screen and (min-width: 768px){
+    header .header-right{
+        text-align: center;
+    }
+}
+
+/*底部*/
+footer{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 52px;
+    background-color: #fff;
+}
+footer .comment{
+    display: block;
+    width: 98%;
+    height: 32px;
+    outline: none;
+    margin: 0 auto;
+    margin-top: 11px;
+    background-color: #eeeeee;
+    border: 0;
+}
+/*用户内容*/
+.second-part-content{
+    position: relative;
+    top: 52px;
+    bottom: 52px;
+    margin-bottom: 6vw;
+    overflow-y: scroll;
+    height: 1000px;
+}
+.second-part-content .content-header{
+    display: flex;
+    background-color: #fff;
+    height: 15vw;
+    line-height: 15vw;
+}
+.second-part-content .content-header .content-header-left{
+    width: 20vw;
+    height: 15vw;
+    line-height: 15vw;
+}
+.second-part-content .content-header .content-header-left .header-box{
+    width: 10vw;
+    height: 10vw;
+    background: url("../images/app-head1.jpg")no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 2.5vw;
+}
+.second-part-content .content-header .center-name{
+    flex: 1;
+    text-align: left;
+    font-size: 4vw;
+}
+.second-part-content .content-header .right-like{
+    width: 20vw;
+    height: 15vw;
+    line-height: 15vw;
+}
+.second-part-content .content-header .right-like .like{
+    display: inline-block;
+    color: #fff;
+    font-size: 2vw;
+    width: 15vw;
+    height: 4.5vh;
+    line-height: 4.5vh;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #9ac600;
+}
+.second-part-content .content-picture{
+    width: 100%;
+    height: 70vh;
+}
+.second-part-content .content-picture a{
+    display: block;
+    width: 100vw;
+    height: 70vh;
+    background: url(../images/app-2-2-3.jpg)no-repeat;
+    background-size: cover;
+}
+/*用户内容细节栏*/
+.second-part-content .content-detail{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 40vw;
+    background-color: #fff;
+}
+.second-part-content .content-detail .detail-box{
+    width: 90%;
+    height: 40vw;
+    margin: 0 auto;
+    /*background-color: pink;*/
+    border-bottom: 1px dotted #7b7b7b;
+}
+.second-part-content .content-detail .row{
+    height: 10vw;
+    line-height: 10vw;
+    display: flex;
+    /*background-color: #fff;*/
+}
+.second-part-content .content-detail .row:first-child{
+    color: #000;
+}
+.second-part-content .content-detail .row:nth-child(2){
+    color: #7B7B7B;
+}
+.second-part-content .content-detail .row:nth-child(2) a{
+    color: deepskyblue;
+    text-decoration: none;
+}
+.second-part-content .content-detail .row-give{
+    height: 20vw;
+    line-height: 20vw;
+}
+.second-part-content .content-detail .row-give .give-box{
+    display: block;
+    width: 15vw;
+    height: 15vw;
+    background-color: #ffd500;
+    margin: 0 auto;
+    margin-top: 2.5vw;
+    line-height: 15vw;
+    text-align: center;
+    border-radius: 50%;
+    color: #fffcf3;
+}
+
+
+/*iphone5s及以下字体溢出隐藏*/
+@media screen and (max-width: 320px) {
+    .second-part-content .content-detail .row:nth-child(3){
+        white-space:nowrap;
+        overflow:hidden;
+        text-overflow:ellipsis;
+    }
+}
+/*用户内容点赞等操作*/
+.second-part-content .content-operate{
+    display: flex;
+    height: 10vw;
+    background-color: #fff;
+}
+.second-part-content .content-operate a{
+    text-align: center;
+    display: block;
+    color: #7b7b7b;
+}
+.second-part-content .content-operate .heart-box,
+.com-box,
+.send-box,
+.good-box,
+.more-box{
+    height: 10vw;
+    line-height: 10vw;
+}
+.second-part-content .content-operate .heart{
+    flex: 0 0 15vw;
+    /*background-color: pink;*/
+}
+.second-part-content .content-operate .com{
+    flex: 0 0 15vw;
+    /*background-color: deepskyblue;*/
+}
+.second-part-content .content-operate .send{
+    flex: 0 0 15vw;
+    /*background-color: palegreen;*/
+}
+.second-part-content .content-operate .good{
+    flex: 0 0 15vw;
+    /*background-color: hotpink;*/
+}
+.second-part-content .content-operate .blank{
+    flex: 1;
+}
+
+.second-part-content .content-operate .more{
+    flex: 0 0 15vw;
+    /*background-color: palegreen;*/
+}
+
+.second-part-content .content-operate .more-box{
+    width: 15vw;
+}
+/*热度*/
+.second-part-content .content-hot{
+    height: 5vw;
+    line-height: 5vw;
+    background-color: #fff;
+    text-align: left;
+}
+.second-part-content .content-hot .hotbox{
+    width: 90%;
+    margin: 0 auto;
+    height: 5vw;
+    /*background-color: orange;*/
+}
+.second-part-content .content-hot span{
+    display: block;
+    height: 5vw;
+    line-height: 5vw;
+    color: #7b7b7b;
+    text-align: left;
+    font-size: 2.5vw;
+}
+/*评论*/
+.second-part-content .content-comment{
+    width: 100%;
+    height: 15vw;
+    /*background-color: skyblue;*/
+}
+.second-part-content .content-comment .comment-row{
+    width: 90%;
+    margin: 0 auto;
+    height: 5vw;
+    /*background-color: yellow;*/
+}
+.second-part-content .content-comment .comment-row a,
+.second-part-content .content-comment .comment-row span{
+    font-size: 2.5vw;
+}
+.second-part-content .content-comment .comment-row a{
+    color: deepskyblue;
+    text-decoration: none;
+}
+

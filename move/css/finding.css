@@ -1,0 +1,485 @@
+body {
+    width: 100%;
+    margin: 0 auto;
+    color: #333;
+    padding: 0;
+    font-family: "Microsoft Yahei";
+    text-align: center;
+    color: #303030;
+}
+/*设置字体*/
+@media screen and (max-width: 320px){
+    html{
+        font-size: 15px !important;
+    }
+}
+@media screen and (min-width: 320px){
+
+}
+
+
+
+.container {
+    width: 100%;
+    border: 1px solid #ccc;
+}
+.swiper1 {
+    width: 100%;
+}
+.swiper1 .selected {
+    font-weight: bold;
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+.swiper1 .swiper-slide {
+    text-align: center;
+    font-size: 16px;
+    height: 50px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    cursor: pointer;
+}
+.swiper2 {
+    width: 100%;
+}
+.swiper2 .swiper-slide {
+    height: calc(100vh - 50px);
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    box-sizing: border-box !important;
+    overflow-x: hidden !important;
+}
+/*推荐中间内容*/
+.wap-main-part-first{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+.wap-main-part-first .wap-section .news-card a{
+    display: block;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #bec0c2;
+    margin-bottom: 20px;
+}
+.wap-main-part-first .wap-section .news-card .news-pic img{
+    width: 100%;
+}
+.wap-main-part-first .wap-section .news-card h3{
+    font-weight: 500;
+    text-align: left;
+    font-size: .95rem;
+    margin-left: 15px;
+    color: #000;
+}
+.wap-main-part-first .wap-section .news-card p{
+    text-align: left;
+    margin-top: 15px;
+    margin-left: 15px;
+    font-size: .9rem;
+    color: #898b8d;
+}
+.wap-main-part-first .wap-section .news-card .activity{
+    display: inline-block;
+    background: url("../images/活动.svg")no-repeat;
+    background-size: contain;
+    margin-bottom: -2px;
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+}
+/*萌宠中间内容*/
+.second-part-header img{
+    width: 100%;
+}
+.second-part-head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    /*background-color: #eeeeee;*/
+}
+.second-part-head .head-item{
+    position: relative;
+    width: 23%;
+    height: 23vw;
+    /*background-color: deeppink;*/
+}
+.second-part-head .head-item img{
+    width: 100%;
+}
+.second-part-head .head-item .item-header{
+    position: absolute;
+    left: 10px;
+    bottom: 5px;
+    color: #fff;
+    font-family: "PingFang SC";
+    font-size: .9rem;
+    text-align: left;
+}
+/*萌宠达人*/
+.second-part-person{
+    width: 100%;
+    height: 15vw;
+    line-height: 15vw;
+    background-color: #fff;
+    margin-bottom: 6vw;
+}
+.second-part-person span{
+    float: left;
+    font-size: 4.5vw;
+    display: inline-block;
+}
+.second-part-person .person-right{
+    float: right;
+}
+.second-part-person:after{
+    content: '.';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.second-part-person .circle-wrapper{
+    position: relative;
+    width: 20vw;
+    right: 15vw;
+    height: 10vw;
+    top: 2.5vw;
+}
+.second-part-person .circle1{
+    position: absolute;
+    width: 7vw;
+    height: 7vw;
+    border-radius: 50%;
+    background: url("../images/app-head2.jpg")no-repeat;
+    background-size: contain;
+    right: 0;
+    border: 1.5vw solid #fff;
+}
+.second-part-person .circle2{
+    position: absolute;
+    width: 7vw;
+    height: 7vw;
+    right: 5vw;
+    border-radius: 50%;
+    background: url(../images/app-head3.jpg)no-repeat;
+    background-size: contain;
+    border: 1.5vw solid #fff;
+}
+.second-part-person .circle3{
+    position: absolute;
+    width: 7vw;
+    height: 7vw;
+    right: 10vw;
+    border-radius: 50%;
+    background: url(../images/app-head-4.jpg)no-repeat;
+    background-size: contain;
+    border: 1.5vw solid #fff;
+}
+.second-part-person .right-array{
+    position: absolute;
+    top: 74vw;
+    right: 3vw;
+    width: 5%;
+
+}
+.second-part-person .right-array img {
+    width: 100%;
+}
+/*用户内容*/
+.second-part-content{
+    margin-bottom: 6vw;
+}
+.second-part-content .content-header{
+    display: flex;
+    background-color: #fff;
+    height: 15vw;
+    line-height: 15vw;
+}
+.second-part-content .content-header .content-header-left{
+    width: 20vw;
+    height: 15vw;
+    line-height: 15vw;
+}
+.second-part-content .content-header .content-header-left .header-box{
+    width: 10vw;
+    height: 10vw;
+    background: url("../images/app-head1.jpg")no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 2.5vw;
+}
+.second-part-content .content-header .center-name{
+    flex: 1;
+    text-align: left;
+    font-size: 4vw;
+}
+.second-part-content .content-header .right-like{
+    width: 20vw;
+    height: 15vw;
+    line-height: 15vw;
+}
+.second-part-content .content-header .right-like .like{
+    display: inline-block;
+    color: #fff;
+    font-size: 2vw;
+    width: 15vw;
+    height: 4.5vh;
+    line-height: 4.5vh;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #9ac600;
+}
+.second-part-content .content-picture{
+    width: 100%;
+    height: 70vh;
+}
+.second-part-content .content-picture a{
+    display: block;
+    width: 100vw;
+    height: 70vh;
+    background: url(../images/app-2-2-3.jpg)no-repeat;
+    background-size: cover;
+}
+/*用户内容细节栏*/
+.second-part-content .content-detail{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 30vw;
+    background-color: #fff;
+}
+.second-part-content .content-detail .detail-box{
+    width: 90%;
+    height: 30vw;
+    margin: 0 auto;
+    border-bottom: 1px dotted #7b7b7b;
+}
+.second-part-content .content-detail .row{
+    height: 10vw;
+    line-height: 10vw;
+    display: flex;
+    background-color: #fff;
+}
+.second-part-content .content-detail .row:first-child{
+    color: #000;
+}
+.second-part-content .content-detail .row:nth-child(3){
+    color: #7B7B7B;
+}
+/*iphone5s及以下字体溢出隐藏*/
+@media screen and (max-width: 320px) {
+    .second-part-content .content-detail .row:nth-child(3){
+        white-space:nowrap;
+        overflow:hidden;
+        text-overflow:ellipsis;
+    }
+}
+/*用户内容点赞等操作*/
+.second-part-content .content-operate{
+    display: flex;
+    height: 10vw;
+    background-color: #fff;
+}
+.second-part-content .content-operate a{
+    display: block;
+    color: #7b7b7b;
+}
+.second-part-content .content-operate .heart-box,
+.com-box,
+.send-box,
+.good-box,
+.more-box{
+    height: 10vw;
+    line-height: 10vw;
+}
+.second-part-content .content-operate .heart{
+    flex: 0 0 15vw;
+    /*background-color: pink;*/
+}
+.second-part-content .content-operate .com{
+    flex: 0 0 15vw;
+    /*background-color: deepskyblue;*/
+}
+.second-part-content .content-operate .send{
+    flex: 0 0 15vw;
+    /*background-color: palegreen;*/
+}
+.second-part-content .content-operate .good{
+    flex: 0 0 15vw;
+    /*background-color: hotpink;*/
+}
+.second-part-content .content-operate .blank{
+    flex: 1;
+}
+
+.second-part-content .content-operate .more{
+    flex: 0 0 15vw;
+    /*background-color: palegreen;*/
+}
+
+.second-part-content .content-operate .more-box{
+    width: 15vw;
+}
+/*热度*/
+.second-part-content .content-hot{
+    height: 10vw;
+    line-height: 10vw;
+    background-color: #fff;
+    text-align: left;
+}
+.second-part-content .content-hot .hotbox{
+    width: 90%;
+    margin: 0 auto;
+    height: 10vw;
+    /*background-color: orange;*/
+}
+.second-part-content .content-hot span{
+    display: block;
+    height: 10vw;
+    line-height: 10vw;
+    color: #7b7b7b;
+    text-align: left;
+}
+
+/*穿搭达人内容*/
+.second-part-content .content-header .content-header-left .header-box1
+{
+    width: 10vw;
+    height: 10vw;
+    background: url("../images/app-cartoon-head-1.png")no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 2.5vw;
+}
+.second-part-content .content-header .content-header-left .wear1{
+    width: 10vw;
+    height: 10vw;
+    background: url("../images/app-cartoon-head-2.jpg")no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 2.5vw;
+}
+.second-part-content .content-picture .pic1{
+    background: url(../images/app-2-5.jpg)no-repeat;
+    background-size: cover;
+}
+
+/*美妆达人内容*/
+.second-part-content .content-picture .meizhuang{
+    background: url("../images/app-4-2-1.jpg")no-repeat;
+    background-size: cover;
+}
+.second-part-content .content-picture .meizhuang2{
+    background: url("../images/app-4-2-2.jpg")no-repeat;
+    background-size: cover;
+}
+/*穿搭达人内容*/
+.second-part-content .content-picture .chuanda{
+    background: url("../images/chuanda1.jpg")no-repeat;
+    background-size: cover;
+}
+.second-part-content .content-picture .chuanda2{
+    background: url("../images/chuadna2.jpg")no-repeat;
+    background-size: cover;
+}
+/*文具达人内容*/
+.second-part-content .content-picture .wenju{
+    background: url("../images/app-5-1-1.jpg")no-repeat;
+    background-size: cover;
+}
+.second-part-content .content-picture .wenju2{
+    background: url("../images/app-5-1-2.jpg")no-repeat;
+    background-size: cover;
+}
+/*美食达人内容*/
+.second-part-content .content-picture .eat{
+    background: url("../images/app-eat-1-1.jpg")no-repeat;
+    background-size: cover;
+}
+.second-part-content .content-picture .eat1{
+    background: url("../images/app-eat-1-2.jpg")no-repeat;
+    background-size: cover;
+}
+/*游戏达人内容*/
+.second-part-content .content-picture .cartoon{
+    background: url("../images/app-cartoon-content-1.jpg")no-repeat;
+    background-size: cover;
+}
+.second-part-content .content-picture .cartoon2{
+    background: url("../images/app-cartoon-content-2.jpg")no-repeat;
+    background-size: cover;
+}
+
+/*旅行达人内容*/
+/*轮播*/
+.trip{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 42.6667vw;
+    overflow: hidden;
+}
+.trip .trip-img{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 42.6667vw;
+}
+/*轮播下面圆点*/
+.trip .carousel_index{
+    position:absolute;
+    width: 6.4vw;
+    bottom: 1.33vw;
+    left:50%;
+    height:3.2vw;
+    transform: translate(-50%,0);
+
+}
+.trip .carousel_icon{
+    float:left;
+    width:3.2vw;
+    height:3.2vw;
+    z-index: 999;
+}
+.carousel_icon1{
+    background:url(../images/圆.svg) no-repeat;
+    background-size:8px;
+    background-position:center center;
+}
+.carousel_icon2{
+    background:url(../images/圆.svg) no-repeat;
+    background-size:8px;
+    background-position:center center;
+}
+
+.second-part-content .content-picture .trip-content1{
+    background: url("../images/app-trip-1.jpg")no-repeat;
+    background-size: cover;
+}
+.second-part-content .content-picture .trip-content2{
+    background: url("../images/app-trip-2.jpg")no-repeat;
+    background-size: cover;
+}
+
+/*男神内容*/
