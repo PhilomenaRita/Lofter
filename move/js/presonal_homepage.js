@@ -22,12 +22,7 @@ $(document).ready(function() {
         $(".share-bg").fadeIn();
         $(".share").slideDown();
     });
-    //分享灰色背景，取消按钮
-    $(".share-bg,.cancel").click(function () {
-        $(".share-bg").fadeOut();
-        $(".share,.share1,.share2").slideUp();
-        $(".special_focus").fadeOut();
-    });
+
     //特别关注按钮（收藏）
     $(".glyphicon-star-empty").click(function () {
         $(this).toggle();
@@ -44,32 +39,7 @@ $(document).ready(function() {
         $(this).fadeOut();
         $(".share-bg").fadeOut();
     });
-    //爱心（热度）
-    $(".glyphicon-heart").click(function () {
-        $(this).toggleClass("red");
-        var num = $(this).parent().siblings("p.hot").find("span");
-        if ($(this).hasClass('red')){
-            num.text(parseInt(num.text())+1);
-        }
-        else {
-            num.text(parseInt(num.text())-1);
-        }
-    });
-    //赞
-    $(".glyphicon-thumbs-up").click(function () {
-        $(this).toggleClass("blue");
-    });
-    //图片分享
-    $(".glyphicon-option-horizontal").click(function () {
 
-        $(".share-bg").fadeIn();
-        $(".share1").slideDown();
-    });
-    //转载
-    $(".glyphicon-share").click(function () {
-        $(".share-bg").fadeIn();
-        $(".share2").slideDown();
-    });
     //缩略图切换
     $(".glyphicon-tasks,.glyphicon-th").click(function () {
         $(".thumbnail-list").toggle();

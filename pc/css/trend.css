@@ -2,22 +2,22 @@
     margin:0;
     padding:0;
 }
-    .middle{
-        overflow:hidden;
-        background: #e1e1e3;
-    }
-    .middle-top{
-        position: fixed;
-        left:45%;
-        top:0;
-        display: none;
-        width: 200px;
-        border-left:5px solid #989898;
-        border-right:5px solid #989898;
-        border-bottom:5px solid #989898;
-        background: #f9fbd4;
-        z-index: 100;
-    }
+.middle{
+    overflow:hidden;
+    background: #e1e1e3;
+}
+.middle-top{
+    position: fixed;
+    left:45%;
+    top:0;
+    display: none;
+    width: 200px;
+    border-left:5px solid #989898;
+    border-right:5px solid #989898;
+    border-bottom:5px solid #989898;
+    background: #f9fbd4;
+    z-index: 100;
+}
     #middle-top2{
         width: 220px;
     }

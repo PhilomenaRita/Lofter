@@ -6,13 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>云霓</title>
     <link href="../css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/personal_homepage.css">
+
 </head>
 <body>
 <header>
         <div class="nav">
             <div class="left">
-                <i class="glyphicon glyphicon-chevron-left"></i>
+                <a href="javascript:history.back(-1);"><i class="glyphicon glyphicon-chevron-left"></i></a>
             </div>
             <div class="middle text-center">
                 <p>云霓</p>
@@ -89,13 +91,15 @@
             </div>
         </div>
         <div class="container">
-            <div class="reward">
-                <p>@山岚 @wangwengui197112...打赏过</p>
-                <div class="people">
-                    <img src="../images/app-2-1.jpg" alt="">
-                    <img src="../images/app-4-3.jpg" alt="">
+            <a href="personal_reward.html">
+                <div class="reward">
+                    <p>@山岚 @wangwengui197112...打赏过</p>
+                    <div class="people">
+                        <img src="../images/app-2-1.jpg" alt="">
+                        <img src="../images/app-4-3.jpg" alt="">
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
     </div>
 </div>
@@ -107,11 +111,11 @@
     </div>
     <div class="share-list">
         <div class="share-box">
-            <div class="box-head container">
+            <a href="#"><div class="box-head container">
                 <img src="../images/personal_homepage/profile.jpg" alt="" class="">
                 <span>云霓</span>
                 <span class="right time">30分钟前</span>
-            </div>
+            </div></a>
             <div class="share-pic">
                 <img src="../images/personal_homepage/share1.jpg" alt="">
             </div>
@@ -128,7 +132,7 @@
                 </p>
                 <div class="action">
                     <i class="glyphicon glyphicon-heart"></i>
-                    <i class="glyphicon glyphicon-edit"></i>
+                    <a href="personal_comment.html"><i class="glyphicon glyphicon-edit"></i></a>
                     <i class="glyphicon glyphicon-share"></i>
                     <i class="glyphicon glyphicon-thumbs-up"></i>
                     <i class="glyphicon glyphicon-option-horizontal right"></i>
@@ -137,11 +141,11 @@
             </div>
         </div>
         <div class="share-box">
-            <div class="box-head container">
+            <a href="#"><div class="box-head container">
                 <img src="../images/personal_homepage/profile.jpg" alt="" class="">
                 <span>云霓</span>
                 <span class="right time">昨天</span>
-            </div>
+            </div></a>
             <div class="share-pic">
                 <img src="../images/personal_homepage/share2.jpg" alt="">
             </div>
@@ -165,7 +169,7 @@
                 </p>
                 <div class="action">
                     <i class="glyphicon glyphicon-heart"></i>
-                    <i class="glyphicon glyphicon-edit"></i>
+                    <a href="personal_comment.html"><i class="glyphicon glyphicon-edit"></i></a>
                     <i class="glyphicon glyphicon-share"></i>
                     <i class="glyphicon glyphicon-thumbs-up"></i>
                     <i class="glyphicon glyphicon-option-horizontal right"></i>
@@ -179,11 +183,11 @@
             </div>
         </div>
         <div class="share-box">
-            <div class="box-head container">
+            <a href="#"><div class="box-head container">
                 <img src="../images/personal_homepage/profile.jpg" alt="" class="">
                 <span>云霓</span>
                 <span class="right time">08-17</span>
-            </div>
+            </div></a>
             <div class="share-pic">
                 <img src="../images/personal_homepage/share3.jpg" alt="">
             </div>
@@ -202,7 +206,7 @@
                 </p>
                 <div class="action">
                     <i class="glyphicon glyphicon-heart"></i>
-                    <i class="glyphicon glyphicon-edit"></i>
+                    <a href="personal_comment.html"><i class="glyphicon glyphicon-edit"></i></a>
                     <i class="glyphicon glyphicon-share"></i>
                     <i class="glyphicon glyphicon-thumbs-up"></i>
                     <i class="glyphicon glyphicon-option-horizontal right"></i>
@@ -295,8 +299,6 @@
 </div>
 <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="../js/presonal_homepage.js"></script>
-<script type="text/javascript">
-
-</script>
+<script type="text/javascript" src="../js/detail-action.js"></script>
 </body>
 </html>

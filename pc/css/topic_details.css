@@ -281,10 +281,6 @@ body{
     padding: 1px 2px 3px;
     background-position: 0 0;
 }
-.portrait_details img{
-    width: 64px;
-    height: 64px;
-}
 .m_listcnt{
     float: right;
     width: 585px;
@@ -892,4 +888,91 @@ li.myblog a:hover em {
 .fixed {
     position: fixed;
     top: 12px;
+}
+.dislike-left{
+    position: absolute;
+    left: -20px;
+    bottom: 0;
+    width: 27px;
+    height: 36px;
+    opacity: 0;
+    background: url(../images/index/icon6.png) 0 -109px no-repeat;
+    animation: unlike-left 1s;
+}
+.dislike-right{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 27px;
+    height: 36px;
+    opacity: 0;
+    background: url(../images/index/icon6.png) -27px -109px no-repeat;
+    animation: unlike-r 1s;
+}
+.like-act{
+    position: absolute;
+    left: -20px;
+    bottom: 0;
+    width: 50px;
+    height: 42px;
+    background: url(../images/index/icon6.png) 0 -148px no-repeat;
+    opacity: 0;
+    animation: like 1s;
+}
+@keyframes like {
+    0%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: scale(1.1) translate(0,-60px);
+    }
+}
+@keyframes unlike-left {
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 0.75;
+        transform: translate(0,-18px);
+    }
+    60%{
+        opacity: 1;
+        transform: translate(-18px,-15px) scale(1.2,0.9) rotate(-10deg);
+        transform-origin: left bottom;
+    }
+    90%{
+        transform: translate(-22px,-19px) scale(1.2,0.9) rotate(-20deg);
+        transform-origin: left bottom;
+    }
+    100%{
+        opacity: 0;
+        transform: translate(-22px,0);
+    }
+}
+@keyframes unlike-r {
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 0.75;
+        transform: translate(0,-18px);
+    }
+    60%{
+        opacity: 1;
+        transform: translate(18px,-15px) scale(1.2,0.9) rotate(10deg);
+        transform-origin: right bottom;
+    }
+    90%{
+        opacity: 0;
+        transform: translate(22px,-19px) scale(1.2,0.9) rotate(20deg);
+        transform-origin: right bottom;
+    }
+    100%{
+        opacity: 0;
+        /*transform: translate(22px,0);*/
+    }
 }

@@ -1,0 +1,203 @@
+/*----顶部导航----*/
+.nav {
+    position: fixed;
+    width: 100%;
+    padding: 10px 15px 9px;
+    margin: 0;
+    z-index: 999;
+    transition: all 0.5s;
+    border-bottom: 1px solid #e2e2e2;
+    color: #494949;
+    line-height: 36px;
+    background-color: #fff;
+    top: 0;
+}
+.left {
+    float: left;
+}
+.nav .left,.nav .right {
+    line-height: 36px;
+}
+.middle p {
+    display: block;
+    font-size: 16px;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+.nav a {
+    color: #4a4a4a;
+}
+/*----单个内容框-----*/
+.share-list {
+    background-color: #f1f1f1;
+}
+.share-box {
+    margin-top: 20px;
+    background-color: white;
+}
+.share-box a {
+    color: #afafaf;
+}
+.share-box:first-child {
+    margin-top: 0;
+}
+.box-head img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    margin-right: 15px;
+}
+.box-head {
+    padding: 10px 15px;
+    line-height: 40px;
+}
+.box-head .time {
+    color: #aaaaaa;
+}
+
+.share-pic img {
+    width: 100%;
+    height: auto;
+}
+.box-bottom {
+    margin-top: 20px;
+}
+.tag {
+    color: gray;
+    border-bottom: 1px solid #b6b6b6;
+    padding-bottom: 10px;
+}
+.tag span {
+    margin-right: 10px;
+}
+.action {
+    font-size: 20px;
+    padding: 15px 0;
+    color: #afafaf;
+}
+.action i,.action a {
+    margin-right: 30px;
+}
+.action i:last-child {
+    margin-right: 0;
+}
+.hot {
+    color: gray;
+}
+.comment a{
+    color: #337ab7;
+}
+
+/*---下拉弹出框-----*/
+.box-head span {
+    color: #333;
+}
+.share-bg {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #38383857;
+    height: 5613px;
+    opacity: 0.8;
+}
+.share,.share1,.share2 {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    width: 100%;
+}
+
+.share2 {
+    background-color: #f3f3f3;
+}
+.content {
+    margin-top: 55px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    font-size: 17px;
+    margin: 0;
+}
+.share-content ul li {
+    padding: 15px 0;
+    border-bottom: 1px solid #eaeaea;
+    background-color: white;
+}
+.share-content ul {
+    background-color: #eaeaea;
+}
+.red {
+    color: #ff6565;
+}
+.share-content ul li:last-child {
+    margin-top: 5px;
+    border-bottom: none;
+}
+.blue {
+    color: #33a9ff;
+}
+.share2 h4{
+    margin: 0;
+    padding: 20px 0;
+    font-weight: bold;
+    border-bottom: 1px solid #c8c8c8;
+}
+.share2 p {
+    padding: 10px 0;
+    margin: 0;
+    color: gray;
+}
+.share2 .cancel {
+    padding: 15px 0;
+    background-color: white;
+    font-size: 15px;
+    color: black;
+}
+.share-app ul {
+    overflow: hidden;
+}
+.share-app ul li{
+    float: left;
+    width: 25%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.share-app ul li img {
+    width:90%;
+    margin-bottom: 5px;
+    background-color: white;
+    padding: 7px;
+    border-radius: 12px;
+}
+.share-app ul li span {
+    font-size: 13px;
+}
+
+/*-----底部发布评论-------*/
+.add-comment {
+    position: fixed;
+    bottom: 0;
+    padding: 5px 10px;
+    width: 100%;
+    border-top: 1px solid #e8e8e8;
+    background-color: white;
+}
+.input-comment {
+    width: 85%;
+    text-indent: 15px;
+    background-color: #efefef;
+    border: 1px solid #efefef;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 13px;
+}
+.sent {
+    color: gray;
+    margin-left: 2%;
+}

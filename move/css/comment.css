@@ -1,0 +1,54 @@
+a {
+    color: gray;
+}
+.content {
+    margin-top: 56px;
+    font-size: 13px;
+}
+.comment {
+    padding-top: 15px;
+}
+.comment-text {
+    width: 78%;
+    float: right;
+}
+.comment img {
+    width: 16%;
+    border-radius: 60px;
+    float: left;
+}
+.comment, .user-info {
+    overflow: hidden;
+}
+.user-info {
+    color: #c6c6c6;
+    margin-bottom: 10px;
+}
+.time {
+    font-size: 12px;
+}
+.comment-text p {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+    margin: 0;
+}
+.add-comment {
+    position: fixed;
+    bottom: 0;
+    padding: 5px 10px;
+    width: 100%;
+    border-top: 1px solid #e8e8e8;
+}
+.input-comment {
+    width: 85%;
+    text-indent: 15px;
+    background-color: #efefef;
+    border: 1px solid #efefef;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 13px;
+}
+.sent {
+    color: gray;
+    margin-left: 2%;
+}

@@ -1,0 +1,23 @@
+$(document).ready(function(){
+    $('.btnitm1').click(function(){//点击标签
+        if($('.t-text').is(':hidden')&&$('.t-calendar').is(':hidden')&&$('.t-label').is(':hidden')){//如果当前隐藏
+            $('.t-text').show();//那么就显示div
+        }else{//否则
+            $('.t-text').hide();//就隐藏div
+        }
+    });
+    $('.btnitm2').click(function(){//点击标签
+        if($('.t-calendar').is(':hidden')&&$('.t-text').is(':hidden')&&$('.t-label').is(':hidden')){//如果当前隐藏
+            $('.t-calendar').show();//那么就显示div
+        }else{//否则
+            $('.t-calendar').hide();//就隐藏div
+        }
+    });
+    $('.btnitm3').click(function(){//点击标签
+        if($('.t-label').is(':hidden')&&$('.t-calendar').is(':hidden')&&$('.t-text').is(':hidden')){//如果当前隐藏
+            $('.t-label').show();//那么就显示div
+        }else{//否则
+            $('.t-label').hide();//就隐藏div
+        }
+    });
+});

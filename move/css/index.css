@@ -1,0 +1,166 @@
+.second-part-person {
+    width: 100%;
+    height: 15vw;
+    line-height: 15vw;
+    background-color: #fff;
+    margin-top: 2vw;
+}
+.second-part-person .circle-wrapper {
+    position: relative;
+    width: 20vw;
+    right: 15vw;
+    height: 10vw;
+    top: 2.5vw;
+}
+.second-part-person .circle1 {
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    background: url(../images/app-head2.jpg)no-repeat;
+    background-size: contain;
+    right: 0;
+    border: 0.5vw solid #fff;
+}
+.second-part-person .circle2 {
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    right: 5vw;
+    border-radius: 50%;
+    background: url(../images/app-head3.jpg)no-repeat;
+    background-size: contain;
+    border: 0.5vw solid #fff;
+}
+.second-part-person .circle3 {
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    right: 10vw;
+    border-radius: 50%;
+    background: url(../images/app-head-4.jpg)no-repeat;
+    background-size: contain;
+    border: 0.5vw solid #fff;
+}
+.second-part-person .right-array {
+    position: absolute;
+    top: 35vw;
+    right: 3vw;
+    width: 5%;
+}
+.content {
+     margin-top: -10px;
+}
+.container {
+    width: 100%;
+}
+.swiper1 .swiper-slide{
+    margin-left: 70px;
+}
+.add_friends{
+    width: 26px;
+    position: absolute;
+    right: 10px;
+}
+.add_friends img{
+    width: 100%;
+    margin: 12px auto;
+}
+.share-box .box-head {
+    padding: 10px 15px;
+    line-height: 40px;
+    overflow: hidden;
+}
+.box-bottom {
+    text-align: left;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 1px;
+}
+.my-subscription{
+    margin-top: 10px;
+    background: #fff;
+    overflow: hidden;
+}
+.subsciiption-user>ul>li{
+    display: inline;
+    position: relative;
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    height: 50px;
+}
+.user-list .subsciiption-user-name{
+    line-height: 50px;
+    text-align: left;
+    margin-left: 76px;
+    color: #000;
+    border-bottom: 1px solid #ccc;
+}
+.recommended-user-name{
+    text-align: left;
+    margin-right: 76px;
+    float: left;
+}
+.recommended-user-name span{
+    display: block;
+}
+.span1{
+    color: #000;
+    line-height: 30px;
+}
+.span2{
+    color: #888;
+    font-size: 10px;
+    line-height: 20px;
+}
+.user-name{
+    height: 50px;
+    margin-left: 76px;
+
+    border-bottom: 1px solid #ccc;
+}
+.user-list-last .subsciiption-user-name{
+    line-height: 50px;
+    text-align: left;
+    margin-left: 76px;
+    color: #000;
+}
+.subsciiption-user img{
+    margin-top: 5px;
+    margin-left: 15px;
+    float: left;
+    width: 40px;
+    height: 40px;
+}
+.subsciiption-nav{
+    text-align: left;
+    color: #888;
+    line-height: 30px;
+    padding-left: 15px;
+    border-bottom: 1px #dfdfdf solid;
+}
+.recommended-button{
+    position: absolute;
+    right: 15px;
+    border: 2px solid #9ac600;
+    color: #9ac600;
+    background: #fff;
+    border-radius: 10px;
+    width: 50px;
+    margin-top: 12px;
+}
+.classify-button input{
+    border: none;
+    margin: 10px auto;
+    border-radius: 10px;
+    background: #fff;
+    color: #9ac600;
+    line-height: 30px;
+}
+.hidden{
+    opacity: 0;
+}
+

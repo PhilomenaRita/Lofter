@@ -14,6 +14,8 @@
 // $('.hover-info').mouseleave(function () {
 //     $('.hover-info.show').css('display','none');
 // });
+
+$(document).ready(function () {
     $('.no-follow').click(function () {
         $(this).css('display','none');
         $('.has-follow').css('display','block');
@@ -38,3 +40,31 @@
             status = 0;
         }
     });
+
+    $('.main-img').each(function () {
+        $(this).find('img').eq(0).css('display','block');
+        $(this).find('.number').text($(this).find('img').length);
+    });
+});
+
+function listImg(_this) {
+    if($(_this).width() < 170){
+        $(_this).css({
+            'float':'none',
+            'max-width':'none',
+            'max-height':'none'
+        });
+        $(_this).find('img').css('display','block');
+    }else{
+        $(_this).css({
+            'float':'left',
+            'max-width':'164px',
+            'max-height':'300px'
+        });
+    }
+}
+
+
+
+
+

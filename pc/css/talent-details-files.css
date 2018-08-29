@@ -111,7 +111,215 @@ body {
     text-align: left;
 }
 .t-bar{
+    height: 32px;
     padding: 23px 0 19px;
     margin: 0 0 20px;
     border-bottom: 1px solid #ddd;
+}
+.side{
+    position: fixed;
+    right: 30px;
+    top: 46px;
+    bottom: 0;
+    border-left: 1px solid #ddd;
+}
+.side a{
+    position: fixed;
+    right: 10px;
+    top: 50%;
+    margin-top: -40px;
+    display: block;
+    width: 20px;
+    height: 80px;
+    background: #ddd url("../images/icn3.png") 6px -730px no-repeat;
+}
+.btnitm {
+    float: left;
+    position: relative;
+    z-index: 120;
+    margin: 0 10px 0 0;
+    width: 93px;
+    height: 30px;
+    background: url("../images/icon4-24.png") 25px -156px no-repeat;
+}
+.btnitm a{
+    display: block;
+    padding: 0;
+    font-size: 16px;
+    color: #aaa;
+    line-height: 30px;
+}
+.btnitm .t-tip:hover{
+    color: #7594B3;;
+}
+.t-text{
+    display: none;
+    color: #E1E2E4;
+    height: 68px;
+    line-height: 68px;
+    white-space: nowrap;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 12px;
+    border: 1px solid #bcc1c8;
+    background: #fff;
+    box-shadow: 0 22px 55px -30px rgba(0,0,0,0.7);
+}
+.t-text a {
+    display: inline-block;
+    padding: 0 12px;
+    color: #aaa;
+    zoom: 1;
+    font-size: 18px;
+}
+.t-text .t-click{
+    color: #444;
+}
+.t-calendar {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 12px;
+    border: 1px solid #bcc1c8;
+    background: #fff;
+    box-shadow: 0 22px 55px -30px rgba(0,0,0,0.7);
+    padding: 20px 20px 40px;
+    font-size: 16px;
+    text-align: center;
+    color: #aaa;
+}
+.y {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+.m {
+    width: 367px;
+    padding: 1px 0 0 0;
+    height: 152px;
+}
+.t-calendar li{
+    float: left;
+    width: 60px;
+    height: 75px;
+    margin: -1px -1px 0 0;
+    border: 1px solid #d7d8db;
+    line-height: 30px;
+}
+.t-calendar a{
+    display: block;
+    width: 60px;
+    height: 65px;
+    padding-top: 10px;
+}
+.t-calendar li em {
+    display: block;
+    font-size: 24px;
+    font-weight: normal;
+    color: #444;
+    font-style: normal;
+}
+.t-calendar li small {
+    font-size: 12px;
+    color: #8F8F8F;
+}
+.empty{
+    background: #f8f8f8;
+    color: #d9d9d9;
+    cursor: default;
+}
+.t-calendar li.empty em{
+    background: #f8f8f8;
+    color: #d9d9d9;
+    cursor: default;
+}
+.t-label{
+    display: none;
+    padding: 28px 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 12px;
+    border: 1px solid #bcc1c8;
+    background: #fff;
+    box-shadow: 0 22px 55px -30px rgba(0,0,0,0.7);
+}
+.t-box{
+    position: relative;
+    width: 380px;
+    height: 214px;
+    padding: 0 25px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.t-box ul {
+    margin: -5px 0 0 -5px;
+}
+.t-box li {
+    display: inline;
+    float: left;
+    margin: 5px 0 0 5px;
+}
+.t-box li a {
+    padding: 1px 0;
+    zoom: 1;
+    white-space: nowrap;
+    font-size: 16px;
+    color: #fff;
+}
+.t-box li a:hover i {
+    background: #444;
+    color: #fff;
+}
+.t-box li a i {
+    float: left;
+    height: 33px;
+    line-height: 33px;
+    background: #888;
+    position: relative;
+    padding: 0 15px;
+    margin: 0 -1px;
+    font-style: normal;
+}
+.arrow {
+    position: absolute;
+    left: 40px;
+    top: -11px;
+    width: 21px;
+    height: 13px;
+    background: url("../images/icn3.png") -28px -814px no-repeat;
+}
+.t-search{
+    float: right;
+    width: 178px;
+    height: 27px;
+    padding: 1px 0 0 1px;
+    border: 1px solid #cececf;
+    background: #f2f2f2;
+}
+.t-search form{
+    width: 177px;
+    height: 26px;
+    border: 1px solid #fbfbfb;
+    border-width: 1px 0 0 1px;
+    background: #fff;
+}
+.t-search input{
+    float: left;
+    width: 138px;
+    height: 15px;
+    padding: 6px 0 5px 10px;
+    border: 0;
+    line-height: 15px;
+    outline: 0;
+    font-size: 12px;
+    color: #444;
+}
+.t-search button{
+    background: url("../images/icon2-8.png") 5px -1010px no-repeat;
+    float: right;
+    width: 27px;
+    height: 27px;
+    border: 0;
 }

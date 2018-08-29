@@ -39,14 +39,6 @@ $(function () {
             .siblings().removeClass("a_isaym2_hover");
     });
 });
-/*点击喜欢*/
-$(function () {
-    var $div_span = $(".opti_img");
-    $div_span.click(function () {       //定义了对应的单击事件，也就是类别的单击事件。
-        var index = $div_span.index(this);
-        $("a.opti_img").eq(index).toggleClass("opti_img_hover");
-    });
-});
 
 /*下载APP*/
 var downloadHeight=$(".download").offset().top;
@@ -57,3 +49,30 @@ document.onscroll =function () {
         $(".download").removeClass("fixed");
     }
 };
+
+/*点击喜欢*/
+var status = 0;
+$('.opti_img').click(function () {
+    if(status == 0){
+        $(this).find('span').removeClass();
+        $(this).find('span').eq(0).addClass('like-act');
+        $(this).addClass('opti_img_hover');
+        status = 1;
+    }else if(status == 1){
+        $(this).removeClass('opti_img_hover');
+        $(this).find('span').removeClass();
+        $(this).find('span').eq(0).addClass('dislike-left');
+        $(this).find('span').eq(1).addClass('dislike-right');
+        status = 0;
+    }
+});
+
+/*关注*/
+$('.no-follow').click(function () {
+    $(this).css('display','none');
+    $('.has-follow').css('display','block');
+});
+$('.has-follow').click(function () {
+    $(this).css('display','none');
+    $('.no-follow').css('display','block');
+});
